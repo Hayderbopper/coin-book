@@ -7,10 +7,335 @@
       "name": "United States",
       "denominations": [
         {
+          "id": "half-cent",
+          "name": "Half Cent",
+          "series": [
+            {
+              "id": "liberty-cap",
+              "name": "Liberty Cap",
+              "dates": "1793–1797",
+              "diameter_mm": 23.5,
+              "description": "The smallest US denomination. 1793 faces left; 1794–1797 faces right.",
+              "slots": [
+                "1793",
+                "1794",
+                "1795",
+                "1796",
+                "1797"
+              ]
+            },
+            {
+              "id": "draped-bust",
+              "name": "Draped Bust",
+              "dates": "1800–1808",
+              "diameter_mm": 23.5,
+              "description": "Robert Scot's Draped Bust portrait.",
+              "slots": [
+                "1800",
+                "1802",
+                "1803",
+                "1804",
+                "1805",
+                "1806",
+                "1807",
+                "1808"
+              ]
+            },
+            {
+              "id": "classic-head",
+              "name": "Classic Head",
+              "dates": "1809–1836",
+              "diameter_mm": 23.5,
+              "description": "John Reich's Classic Head. 1831 and 1836 are mostly proofs and restrikes.",
+              "slots": [
+                "1809",
+                "1810",
+                "1811",
+                "1825",
+                "1826",
+                "1828",
+                "1829",
+                "1831",
+                "1832",
+                "1833",
+                "1834",
+                "1835",
+                "1836"
+              ]
+            },
+            {
+              "id": "braided-hair",
+              "name": "Braided Hair",
+              "dates": "1840–1857",
+              "diameter_mm": 23.5,
+              "description": "Christian Gobrecht's Braided Hair. 1840–1848 and 1852 were struck only as proofs, so the folder starts at 1849.",
+              "slots": [
+                "1849",
+                "1850",
+                "1851",
+                "1853",
+                "1854",
+                "1855",
+                "1856",
+                "1857"
+              ]
+            }
+          ]
+        },
+        {
           "id": "cent",
           "name": "Cent",
           "nickname": "Penny",
           "series": [
+            {
+              "id": "flowing-hair-large",
+              "name": "Flowing Hair Large Cent",
+              "dates": "1793",
+              "diameter_mm": 26.5,
+              "description": "The first cents struck by the US Mint, with chain and then wreath reverses.",
+              "slots": [
+                {
+                  "id": "1793-chain",
+                  "label": "1793",
+                  "sub": "Chain"
+                },
+                {
+                  "id": "1793-wreath",
+                  "label": "1793",
+                  "sub": "Wreath"
+                }
+              ]
+            },
+            {
+              "id": "liberty-cap-large",
+              "name": "Liberty Cap Large Cent",
+              "dates": "1793–1796",
+              "diameter_mm": 28.5,
+              "description": "Liberty with a cap on a pole behind her head.",
+              "slots": [
+                "1793",
+                "1794",
+                "1795",
+                "1796"
+              ]
+            },
+            {
+              "id": "draped-bust-large",
+              "name": "Draped Bust Large Cent",
+              "dates": "1796–1807",
+              "diameter_mm": 28.5,
+              "description": "Robert Scot's Draped Bust. 1799 and 1804 are the key dates.",
+              "slots": [
+                "1796",
+                "1797",
+                "1798",
+                "1799",
+                "1800",
+                "1801",
+                "1802",
+                "1803",
+                "1804",
+                "1805",
+                "1806",
+                "1807",
+                {
+                  "id": "1799-9-over-8",
+                  "label": "1799",
+                  "sub": "9 over 8",
+                  "variety": true
+                }
+              ]
+            },
+            {
+              "id": "classic-head-large",
+              "name": "Classic Head Large Cent",
+              "dates": "1808–1814",
+              "diameter_mm": 28.5,
+              "description": "John Reich's Classic Head.",
+              "slots": [
+                "1808",
+                "1809",
+                "1810",
+                "1811",
+                "1812",
+                "1813",
+                "1814"
+              ]
+            },
+            {
+              "id": "coronet-large",
+              "name": "Coronet (Matron Head) Large Cent",
+              "dates": "1816–1839",
+              "diameter_mm": 28.5,
+              "description": "Liberty wearing a coronet. No cents were dated 1815.",
+              "slots": [
+                "1816",
+                "1817",
+                "1818",
+                "1819",
+                "1820",
+                "1821",
+                "1822",
+                "1823",
+                "1824",
+                "1825",
+                "1826",
+                "1827",
+                "1828",
+                "1829",
+                "1830",
+                "1831",
+                "1832",
+                "1833",
+                "1834",
+                "1835",
+                "1836",
+                "1837",
+                "1838",
+                "1839"
+              ]
+            },
+            {
+              "id": "braided-hair-large",
+              "name": "Braided Hair Large Cent",
+              "dates": "1839–1857",
+              "diameter_mm": 27.5,
+              "description": "Gobrecht's Braided Hair, the last of the large cents.",
+              "slots": [
+                "1839",
+                "1840",
+                "1841",
+                "1842",
+                "1843",
+                "1844",
+                "1845",
+                "1846",
+                "1847",
+                "1848",
+                "1849",
+                "1850",
+                "1851",
+                "1852",
+                "1853",
+                "1854",
+                "1855",
+                "1856",
+                "1857"
+              ]
+            },
+            {
+              "id": "flying-eagle",
+              "name": "Flying Eagle",
+              "dates": "1856–1858",
+              "diameter_mm": 19,
+              "description": "The first small cent, in copper-nickel. 1856 was a pattern given out to officials.",
+              "slots": [
+                "1856",
+                "1857",
+                {
+                  "id": "1858-large-letters",
+                  "label": "1858",
+                  "sub": "Large Letters"
+                },
+                {
+                  "id": "1858-small-letters",
+                  "label": "1858",
+                  "sub": "Small Letters"
+                }
+              ]
+            },
+            {
+              "id": "indian-head",
+              "name": "Indian Head",
+              "dates": "1859–1909",
+              "diameter_mm": 19,
+              "description": "James Longacre's Indian Head. Copper-nickel until 1864, then bronze. 1908-S and 1909-S are the only branch-mint issues.",
+              "slots": [
+                "1859",
+                "1860",
+                "1861",
+                "1862",
+                "1863",
+                {
+                  "id": "1864-copper-nickel",
+                  "label": "1864",
+                  "sub": "Copper-nickel"
+                },
+                {
+                  "id": "1864-bronze",
+                  "label": "1864",
+                  "sub": "Bronze"
+                },
+                {
+                  "id": "1864-l-on-ribbon",
+                  "label": "1864",
+                  "sub": "L on Ribbon",
+                  "variety": true
+                },
+                "1865",
+                "1866",
+                "1867",
+                "1868",
+                "1869",
+                "1870",
+                "1871",
+                "1872",
+                {
+                  "id": "1873-closed-3",
+                  "label": "1873",
+                  "sub": "Closed 3"
+                },
+                {
+                  "id": "1873-open-3",
+                  "label": "1873",
+                  "sub": "Open 3"
+                },
+                "1874",
+                "1875",
+                "1876",
+                "1877",
+                "1878",
+                "1879",
+                "1880",
+                "1881",
+                "1882",
+                "1883",
+                "1884",
+                "1885",
+                "1886",
+                "1887",
+                "1888",
+                {
+                  "id": "1888-8-over-7",
+                  "label": "1888",
+                  "sub": "8 over 7",
+                  "variety": true
+                },
+                "1889",
+                "1890",
+                "1891",
+                "1892",
+                "1893",
+                "1894",
+                "1895",
+                "1896",
+                "1897",
+                "1898",
+                "1899",
+                "1900",
+                "1901",
+                "1902",
+                "1903",
+                "1904",
+                "1905",
+                "1906",
+                "1907",
+                "1908",
+                "1908-S",
+                "1909",
+                "1909-S"
+              ]
+            },
             {
               "id": "wheat",
               "name": "Lincoln Wheat",
@@ -512,6 +837,4965 @@
                     "",
                     "D"
                   ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "two-cent",
+          "name": "Two Cents",
+          "series": [
+            {
+              "id": "shield",
+              "name": "Shield",
+              "dates": "1864–1872",
+              "diameter_mm": 23,
+              "description": "The first US coin to carry IN GOD WE TRUST. 1873 was struck only as a proof.",
+              "slots": [
+                {
+                  "id": "1864-small-motto",
+                  "label": "1864",
+                  "sub": "Small Motto"
+                },
+                {
+                  "id": "1864-large-motto",
+                  "label": "1864",
+                  "sub": "Large Motto"
+                },
+                "1865",
+                "1866",
+                "1867",
+                "1868",
+                "1869",
+                "1870",
+                "1871",
+                "1872"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "three-cent",
+          "name": "Three Cents",
+          "series": [
+            {
+              "id": "silver",
+              "name": "Silver (Trime)",
+              "dates": "1851–1872",
+              "diameter_mm": 14,
+              "description": "The smallest US silver coin, made to buy three-cent postage stamps. 1851-O is the only branch-mint issue.",
+              "slots": [
+                "1851",
+                "1851-O",
+                "1852",
+                "1853",
+                "1854",
+                "1855",
+                "1856",
+                "1857",
+                "1858",
+                "1859",
+                "1860",
+                "1861",
+                "1862",
+                "1863",
+                "1864",
+                "1865",
+                "1866",
+                "1867",
+                "1868",
+                "1869",
+                "1870",
+                "1871",
+                "1872"
+              ]
+            },
+            {
+              "id": "nickel",
+              "name": "Nickel",
+              "dates": "1865–1889",
+              "diameter_mm": 17.9,
+              "description": "Copper-nickel three cents. 1877, 1878 and 1886 were struck only as proofs.",
+              "slots": [
+                "1865",
+                "1866",
+                "1867",
+                "1868",
+                "1869",
+                "1870",
+                "1871",
+                "1872",
+                "1873",
+                "1874",
+                "1875",
+                "1876",
+                "1879",
+                "1880",
+                "1881",
+                "1882",
+                "1883",
+                "1884",
+                "1885",
+                "1887",
+                "1888",
+                "1889"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "half-dime",
+          "name": "Half Dime",
+          "series": [
+            {
+              "id": "flowing-hair",
+              "name": "Flowing Hair",
+              "dates": "1794–1795",
+              "diameter_mm": 16.5,
+              "description": "The first silver five-cent pieces.",
+              "slots": [
+                "1794",
+                "1795"
+              ]
+            },
+            {
+              "id": "draped-bust",
+              "name": "Draped Bust",
+              "dates": "1796–1805",
+              "diameter_mm": 16.5,
+              "description": "Small eagle reverse to 1797, heraldic eagle from 1800.",
+              "slots": [
+                "1796",
+                "1797",
+                "1800",
+                "1801",
+                "1802",
+                "1803",
+                "1805"
+              ]
+            },
+            {
+              "id": "capped-bust",
+              "name": "Capped Bust",
+              "dates": "1829–1837",
+              "diameter_mm": 15.5,
+              "description": "William Kneass's version of the Capped Bust.",
+              "slots": [
+                "1829",
+                "1830",
+                "1831",
+                "1832",
+                "1833",
+                "1834",
+                "1835",
+                "1836",
+                "1837"
+              ]
+            },
+            {
+              "id": "seated-liberty",
+              "name": "Seated Liberty",
+              "dates": "1837–1873",
+              "diameter_mm": 15.5,
+              "description": "Gobrecht's Seated Liberty, through no stars, stars, arrows and legend types.",
+              "slots": [
+                "1837",
+                "1838",
+                "1838-O",
+                "1839",
+                "1839-O",
+                "1840",
+                "1840-O",
+                "1841",
+                "1841-O",
+                "1842",
+                "1842-O",
+                "1843",
+                "1844",
+                "1844-O",
+                "1845",
+                "1846",
+                "1847",
+                "1848",
+                "1848-O",
+                "1849",
+                "1849-O",
+                "1850",
+                "1850-O",
+                "1851",
+                "1851-O",
+                "1852",
+                "1852-O",
+                {
+                  "id": "1853-no-arrows",
+                  "label": "1853",
+                  "sub": "No Arrows"
+                },
+                {
+                  "id": "1853-o-no-arrows",
+                  "label": "1853-O",
+                  "sub": "No Arrows"
+                },
+                {
+                  "id": "1853-arrows",
+                  "label": "1853",
+                  "sub": "Arrows"
+                },
+                {
+                  "id": "1853-o-arrows",
+                  "label": "1853-O",
+                  "sub": "Arrows"
+                },
+                "1854",
+                "1854-O",
+                "1855",
+                "1855-O",
+                "1856",
+                "1856-O",
+                "1857",
+                "1857-O",
+                "1858",
+                "1858-O",
+                "1859",
+                "1859-O",
+                "1860",
+                "1860-O",
+                "1861",
+                "1862",
+                "1863",
+                "1863-S",
+                "1864",
+                "1864-S",
+                "1865",
+                "1865-S",
+                "1866",
+                "1866-S",
+                "1867",
+                "1867-S",
+                "1868",
+                "1868-S",
+                "1869",
+                "1869-S",
+                "1870",
+                "1871",
+                "1871-S",
+                "1872",
+                "1872-S",
+                "1873",
+                "1873-S"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "nickel",
+          "name": "Five Cents",
+          "nickname": "Nickel",
+          "series": [
+            {
+              "id": "shield",
+              "name": "Shield",
+              "dates": "1866–1883",
+              "diameter_mm": 20.5,
+              "description": "The first copper-nickel five-cent piece. Rays between the stars were dropped in 1867. 1877 and 1878 were proofs only.",
+              "slots": [
+                "1866",
+                {
+                  "id": "1867-with-rays",
+                  "label": "1867",
+                  "sub": "With Rays"
+                },
+                {
+                  "id": "1867-no-rays",
+                  "label": "1867",
+                  "sub": "No Rays"
+                },
+                "1868",
+                "1869",
+                "1870",
+                "1871",
+                "1872",
+                "1873",
+                "1874",
+                "1875",
+                "1876",
+                "1879",
+                "1880",
+                "1881",
+                "1882",
+                "1883",
+                {
+                  "id": "1883-3-over-2",
+                  "label": "1883",
+                  "sub": "3 over 2",
+                  "variety": true
+                }
+              ]
+            },
+            {
+              "id": "liberty-head",
+              "name": "Liberty Head",
+              "dates": "1883–1912",
+              "diameter_mm": 21.2,
+              "description": "Charles Barber's V nickel. The first 1883 coins left off the word CENTS.",
+              "slots": [
+                {
+                  "id": "1883-no-cents",
+                  "label": "1883",
+                  "sub": "No CENTS"
+                },
+                {
+                  "id": "1883-with-cents",
+                  "label": "1883",
+                  "sub": "With CENTS"
+                },
+                "1884",
+                "1885",
+                "1886",
+                "1887",
+                "1888",
+                "1889",
+                "1890",
+                "1891",
+                "1892",
+                "1893",
+                "1894",
+                "1895",
+                "1896",
+                "1897",
+                "1898",
+                "1899",
+                "1900",
+                "1901",
+                "1902",
+                "1903",
+                "1904",
+                "1905",
+                "1906",
+                "1907",
+                "1908",
+                "1909",
+                "1910",
+                "1911",
+                "1912",
+                "1912-D",
+                "1912-S"
+              ]
+            },
+            {
+              "id": "buffalo",
+              "name": "Buffalo",
+              "dates": "1913–1938",
+              "diameter_mm": 21.2,
+              "description": "James Earle Fraser's Indian Head and American bison. Type 1 shows the bison on a mound, Type 2 on flat ground.",
+              "slots": [
+                {
+                  "id": "1913-type-1",
+                  "label": "1913",
+                  "sub": "Type 1"
+                },
+                {
+                  "id": "1913-d-type-1",
+                  "label": "1913-D",
+                  "sub": "Type 1"
+                },
+                {
+                  "id": "1913-s-type-1",
+                  "label": "1913-S",
+                  "sub": "Type 1"
+                },
+                {
+                  "id": "1913-type-2",
+                  "label": "1913",
+                  "sub": "Type 2"
+                },
+                {
+                  "id": "1913-d-type-2",
+                  "label": "1913-D",
+                  "sub": "Type 2"
+                },
+                {
+                  "id": "1913-s-type-2",
+                  "label": "1913-S",
+                  "sub": "Type 2"
+                },
+                "1914",
+                "1914-D",
+                "1914-S",
+                "1915",
+                "1915-D",
+                "1915-S",
+                "1916",
+                "1916-D",
+                "1916-S",
+                {
+                  "id": "1916-doubled-die-obverse",
+                  "label": "1916",
+                  "sub": "Doubled Die Obverse",
+                  "variety": true
+                },
+                "1917",
+                "1917-D",
+                "1917-S",
+                "1918",
+                "1918-D",
+                "1918-S",
+                {
+                  "id": "1918-d-8-over-7",
+                  "label": "1918-D",
+                  "sub": "8 over 7",
+                  "variety": true
+                },
+                "1919",
+                "1919-D",
+                "1919-S",
+                "1920",
+                "1920-D",
+                "1920-S",
+                "1921",
+                "1921-S",
+                "1923",
+                "1923-S",
+                "1924",
+                "1924-D",
+                "1924-S",
+                "1925",
+                "1925-D",
+                "1925-S",
+                "1926",
+                "1926-D",
+                "1926-S",
+                "1927",
+                "1927-D",
+                "1927-S",
+                "1928",
+                "1928-D",
+                "1928-S",
+                "1929",
+                "1929-D",
+                "1929-S",
+                "1930",
+                "1930-S",
+                "1931-S",
+                "1934",
+                "1934-D",
+                "1935",
+                "1935-D",
+                "1935-S",
+                "1936",
+                "1936-D",
+                "1936-S",
+                "1937",
+                "1937-D",
+                "1937-S",
+                {
+                  "id": "1937-d-3-legged",
+                  "label": "1937-D",
+                  "sub": "3-Legged",
+                  "variety": true
+                },
+                "1938-D"
+              ]
+            },
+            {
+              "id": "jefferson",
+              "name": "Jefferson",
+              "dates": "1938–2003",
+              "diameter_mm": 21.2,
+              "description": "Felix Schlag's Jefferson with Monticello. 1942–1945 wartime nickels are 35% silver and carry a large mint mark over Monticello, including the first P.",
+              "slots": [
+                "1938",
+                "1938-D",
+                "1938-S",
+                "1939",
+                "1939-D",
+                "1939-S",
+                "1940",
+                "1940-D",
+                "1940-S",
+                "1941",
+                "1941-D",
+                "1941-S",
+                "1942",
+                "1942-D",
+                {
+                  "id": "1942-p-silver",
+                  "label": "1942-P",
+                  "sub": "Silver"
+                },
+                {
+                  "id": "1942-s-silver",
+                  "label": "1942-S",
+                  "sub": "Silver"
+                },
+                {
+                  "id": "1943-p-silver",
+                  "label": "1943-P",
+                  "sub": "Silver"
+                },
+                {
+                  "id": "1943-p-3-over-2",
+                  "label": "1943-P",
+                  "sub": "3 over 2",
+                  "variety": true
+                },
+                {
+                  "id": "1943-d-silver",
+                  "label": "1943-D",
+                  "sub": "Silver"
+                },
+                {
+                  "id": "1943-s-silver",
+                  "label": "1943-S",
+                  "sub": "Silver"
+                },
+                {
+                  "id": "1944-p-silver",
+                  "label": "1944-P",
+                  "sub": "Silver"
+                },
+                {
+                  "id": "1944-d-silver",
+                  "label": "1944-D",
+                  "sub": "Silver"
+                },
+                {
+                  "id": "1944-s-silver",
+                  "label": "1944-S",
+                  "sub": "Silver"
+                },
+                {
+                  "id": "1945-p-silver",
+                  "label": "1945-P",
+                  "sub": "Silver"
+                },
+                {
+                  "id": "1945-d-silver",
+                  "label": "1945-D",
+                  "sub": "Silver"
+                },
+                {
+                  "id": "1945-s-silver",
+                  "label": "1945-S",
+                  "sub": "Silver"
+                },
+                "1946",
+                "1946-D",
+                "1946-S",
+                "1947",
+                "1947-D",
+                "1947-S",
+                "1948",
+                "1948-D",
+                "1948-S",
+                "1949",
+                "1949-D",
+                "1949-S",
+                "1950",
+                "1950-D",
+                "1951",
+                "1951-D",
+                "1951-S",
+                "1952",
+                "1952-D",
+                "1952-S",
+                "1953",
+                "1953-D",
+                "1953-S",
+                "1954",
+                "1954-D",
+                "1954-S",
+                "1955",
+                "1955-D",
+                "1956",
+                "1956-D",
+                "1957",
+                "1957-D",
+                "1958",
+                "1958-D",
+                "1959",
+                "1959-D",
+                "1960",
+                "1960-D",
+                "1961",
+                "1961-D",
+                "1962",
+                "1962-D",
+                "1963",
+                "1963-D",
+                "1964",
+                "1964-D",
+                "1965",
+                "1966",
+                "1967",
+                "1968-D",
+                "1968-S",
+                "1969-D",
+                "1969-S",
+                "1970-D",
+                "1970-S",
+                "1971",
+                "1971-D",
+                "1972",
+                "1972-D",
+                "1973",
+                "1973-D",
+                "1974",
+                "1974-D",
+                "1975",
+                "1975-D",
+                "1976",
+                "1976-D",
+                "1977",
+                "1977-D",
+                "1978",
+                "1978-D",
+                "1979",
+                "1979-D",
+                "1980",
+                "1980-D",
+                "1981",
+                "1981-D",
+                "1982",
+                "1982-D",
+                "1983",
+                "1983-D",
+                "1984",
+                "1984-D",
+                "1985",
+                "1985-D",
+                "1986",
+                "1986-D",
+                "1987",
+                "1987-D",
+                "1988",
+                "1988-D",
+                "1989",
+                "1989-D",
+                "1990",
+                "1990-D",
+                "1991",
+                "1991-D",
+                "1992",
+                "1992-D",
+                "1993",
+                "1993-D",
+                "1994",
+                "1994-D",
+                "1995",
+                "1995-D",
+                "1996",
+                "1996-D",
+                "1997",
+                "1997-D",
+                "1998",
+                "1998-D",
+                "1999",
+                "1999-D",
+                "2000",
+                "2000-D",
+                "2001",
+                "2001-D",
+                "2002",
+                "2002-D",
+                "2003",
+                "2003-D"
+              ]
+            },
+            {
+              "id": "westward-journey",
+              "name": "Westward Journey",
+              "dates": "2004–2005",
+              "diameter_mm": 21.2,
+              "description": "Four designs for the bicentennial of the Louisiana Purchase and the Lewis and Clark expedition.",
+              "slots": [
+                {
+                  "id": "2004-peace-medal",
+                  "label": "2004",
+                  "sub": "Peace Medal"
+                },
+                {
+                  "id": "2004-d-peace-medal",
+                  "label": "2004-D",
+                  "sub": "Peace Medal"
+                },
+                {
+                  "id": "2004-keelboat",
+                  "label": "2004",
+                  "sub": "Keelboat"
+                },
+                {
+                  "id": "2004-d-keelboat",
+                  "label": "2004-D",
+                  "sub": "Keelboat"
+                },
+                {
+                  "id": "2005-american-bison",
+                  "label": "2005",
+                  "sub": "American Bison"
+                },
+                {
+                  "id": "2005-d-american-bison",
+                  "label": "2005-D",
+                  "sub": "American Bison"
+                },
+                {
+                  "id": "2005-ocean-in-view",
+                  "label": "2005",
+                  "sub": "Ocean in View"
+                },
+                {
+                  "id": "2005-d-ocean-in-view",
+                  "label": "2005-D",
+                  "sub": "Ocean in View"
+                }
+              ]
+            },
+            {
+              "id": "jefferson-modern",
+              "name": "Return to Monticello",
+              "dates": "2006–2025",
+              "diameter_mm": 21.2,
+              "description": "Jamie Franki's forward-facing Jefferson with Monticello restored to the reverse.",
+              "slots": [
+                "2006",
+                "2006-D",
+                "2007",
+                "2007-D",
+                "2008",
+                "2008-D",
+                "2009",
+                "2009-D",
+                "2010",
+                "2010-D",
+                "2011",
+                "2011-D",
+                "2012",
+                "2012-D",
+                "2013",
+                "2013-D",
+                "2014",
+                "2014-D",
+                "2015",
+                "2015-D",
+                "2016",
+                "2016-D",
+                "2017",
+                "2017-D",
+                "2018",
+                "2018-D",
+                "2019",
+                "2019-D",
+                "2020",
+                "2020-D",
+                "2021",
+                "2021-D",
+                "2022",
+                "2022-D",
+                "2023",
+                "2023-D",
+                "2024",
+                "2024-D",
+                "2025",
+                "2025-D"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "dime",
+          "name": "Dime",
+          "series": [
+            {
+              "id": "draped-bust",
+              "name": "Draped Bust",
+              "dates": "1796–1807",
+              "diameter_mm": 19,
+              "description": "Small eagle reverse to 1797, heraldic eagle from 1798.",
+              "slots": [
+                "1796",
+                "1797",
+                "1798",
+                "1800",
+                "1801",
+                "1802",
+                "1803",
+                "1804",
+                "1805",
+                "1807"
+              ]
+            },
+            {
+              "id": "capped-bust",
+              "name": "Capped Bust",
+              "dates": "1809–1837",
+              "diameter_mm": 18.5,
+              "description": "John Reich's Capped Bust.",
+              "slots": [
+                "1809",
+                "1811",
+                "1814",
+                "1820",
+                "1821",
+                "1822",
+                "1823",
+                "1824",
+                "1825",
+                "1827",
+                "1828",
+                "1829",
+                "1830",
+                "1831",
+                "1832",
+                "1833",
+                "1834",
+                "1835",
+                "1836",
+                "1837"
+              ]
+            },
+            {
+              "id": "seated-liberty",
+              "name": "Seated Liberty",
+              "dates": "1837–1891",
+              "diameter_mm": 17.9,
+              "description": "Gobrecht's Seated Liberty, with arrows at the date in 1853–1855 and 1873–1874 for weight changes.",
+              "slots": [
+                "1837",
+                "1838",
+                "1838-O",
+                "1839",
+                "1839-O",
+                "1840",
+                "1840-O",
+                "1841",
+                "1841-O",
+                "1842",
+                "1842-O",
+                "1843",
+                "1843-O",
+                "1844",
+                "1845",
+                "1845-O",
+                "1846",
+                "1847",
+                "1848",
+                "1849",
+                "1849-O",
+                "1850",
+                "1850-O",
+                "1851",
+                "1851-O",
+                "1852",
+                "1852-O",
+                {
+                  "id": "1853-no-arrows",
+                  "label": "1853",
+                  "sub": "No Arrows"
+                },
+                {
+                  "id": "1853-arrows",
+                  "label": "1853",
+                  "sub": "Arrows"
+                },
+                "1853-O",
+                "1854",
+                "1854-O",
+                "1855",
+                "1856",
+                "1856-O",
+                "1856-S",
+                "1857",
+                "1857-O",
+                "1858",
+                "1858-O",
+                "1858-S",
+                "1859",
+                "1859-O",
+                "1859-S",
+                "1860",
+                "1860-O",
+                "1860-S",
+                "1861",
+                "1861-S",
+                "1862",
+                "1862-S",
+                "1863",
+                "1863-S",
+                "1864",
+                "1864-S",
+                "1865",
+                "1865-S",
+                "1866",
+                "1866-S",
+                "1867",
+                "1867-S",
+                "1868",
+                "1868-S",
+                "1869",
+                "1869-S",
+                "1870",
+                "1870-S",
+                "1871",
+                "1871-CC",
+                "1871-S",
+                "1872",
+                "1872-CC",
+                "1872-S",
+                {
+                  "id": "1873-no-arrows",
+                  "label": "1873",
+                  "sub": "No Arrows"
+                },
+                {
+                  "id": "1873-arrows",
+                  "label": "1873",
+                  "sub": "Arrows"
+                },
+                {
+                  "id": "1873-cc-arrows",
+                  "label": "1873-CC",
+                  "sub": "Arrows"
+                },
+                {
+                  "id": "1873-s-arrows",
+                  "label": "1873-S",
+                  "sub": "Arrows"
+                },
+                "1874",
+                "1874-CC",
+                "1874-S",
+                "1875",
+                "1875-CC",
+                "1875-S",
+                "1876",
+                "1876-CC",
+                "1876-S",
+                "1877",
+                "1877-CC",
+                "1877-S",
+                "1878",
+                "1878-CC",
+                "1879",
+                "1880",
+                "1881",
+                "1882",
+                "1883",
+                "1884",
+                "1884-S",
+                "1885",
+                "1885-S",
+                "1886",
+                "1886-S",
+                "1887",
+                "1887-S",
+                "1888",
+                "1888-S",
+                "1889",
+                "1889-S",
+                "1890",
+                "1890-S",
+                "1891",
+                "1891-O",
+                "1891-S"
+              ]
+            },
+            {
+              "id": "barber",
+              "name": "Barber",
+              "dates": "1892–1916",
+              "diameter_mm": 17.9,
+              "description": "Charles Barber's Liberty Head. The 1894-S, with 24 struck, is one of the great US rarities.",
+              "slots": [
+                "1892",
+                "1892-O",
+                "1892-S",
+                "1893",
+                "1893-O",
+                "1893-S",
+                "1894",
+                "1894-O",
+                "1894-S",
+                "1895",
+                "1895-O",
+                "1895-S",
+                "1896",
+                "1896-O",
+                "1896-S",
+                "1897",
+                "1897-O",
+                "1897-S",
+                "1898",
+                "1898-O",
+                "1898-S",
+                "1899",
+                "1899-O",
+                "1899-S",
+                "1900",
+                "1900-O",
+                "1900-S",
+                "1901",
+                "1901-O",
+                "1901-S",
+                "1902",
+                "1902-O",
+                "1902-S",
+                "1903",
+                "1903-O",
+                "1903-S",
+                "1904",
+                "1904-S",
+                "1905",
+                "1905-O",
+                "1905-S",
+                "1906",
+                "1906-D",
+                "1906-O",
+                "1906-S",
+                "1907",
+                "1907-D",
+                "1907-O",
+                "1907-S",
+                "1908",
+                "1908-D",
+                "1908-O",
+                "1908-S",
+                "1909",
+                "1909-D",
+                "1909-O",
+                "1909-S",
+                "1910",
+                "1910-D",
+                "1910-S",
+                "1911",
+                "1911-D",
+                "1911-S",
+                "1912",
+                "1912-D",
+                "1912-S",
+                "1913",
+                "1913-S",
+                "1914",
+                "1914-D",
+                "1914-S",
+                "1915",
+                "1915-S",
+                "1916",
+                "1916-S"
+              ]
+            },
+            {
+              "id": "mercury",
+              "name": "Winged Liberty (Mercury)",
+              "dates": "1916–1945",
+              "diameter_mm": 17.9,
+              "description": "Adolph Weinman's Liberty in a winged cap, often mistaken for Mercury. 1916-D is the key date.",
+              "slots": [
+                "1916",
+                "1916-D",
+                "1916-S",
+                "1917",
+                "1917-D",
+                "1917-S",
+                "1918",
+                "1918-D",
+                "1918-S",
+                "1919",
+                "1919-D",
+                "1919-S",
+                "1920",
+                "1920-D",
+                "1920-S",
+                "1921",
+                "1921-D",
+                "1923",
+                "1923-S",
+                "1924",
+                "1924-D",
+                "1924-S",
+                "1925",
+                "1925-D",
+                "1925-S",
+                "1926",
+                "1926-D",
+                "1926-S",
+                "1927",
+                "1927-D",
+                "1927-S",
+                "1928",
+                "1928-D",
+                "1928-S",
+                "1929",
+                "1929-D",
+                "1929-S",
+                "1930",
+                "1930-S",
+                "1931",
+                "1931-D",
+                "1931-S",
+                "1934",
+                "1934-D",
+                "1935",
+                "1935-D",
+                "1935-S",
+                "1936",
+                "1936-D",
+                "1936-S",
+                "1937",
+                "1937-D",
+                "1937-S",
+                "1938",
+                "1938-D",
+                "1938-S",
+                "1939",
+                "1939-D",
+                "1939-S",
+                "1940",
+                "1940-D",
+                "1940-S",
+                "1941",
+                "1941-D",
+                "1941-S",
+                "1942",
+                "1942-D",
+                "1942-S",
+                {
+                  "id": "1942-2-over-1",
+                  "label": "1942",
+                  "sub": "2 over 1",
+                  "variety": true
+                },
+                {
+                  "id": "1942-d-2-over-1",
+                  "label": "1942-D",
+                  "sub": "2 over 1",
+                  "variety": true
+                },
+                "1943",
+                "1943-D",
+                "1943-S",
+                "1944",
+                "1944-D",
+                "1944-S",
+                "1945",
+                "1945-D",
+                "1945-S"
+              ]
+            },
+            {
+              "id": "roosevelt-silver",
+              "name": "Roosevelt, Silver",
+              "dates": "1946–1964",
+              "diameter_mm": 17.9,
+              "description": "John Sinnock's Roosevelt in 90% silver.",
+              "slots": [
+                "1946",
+                "1946-D",
+                "1946-S",
+                "1947",
+                "1947-D",
+                "1947-S",
+                "1948",
+                "1948-D",
+                "1948-S",
+                "1949",
+                "1949-D",
+                "1949-S",
+                "1950",
+                "1950-D",
+                "1950-S",
+                "1951",
+                "1951-D",
+                "1951-S",
+                "1952",
+                "1952-D",
+                "1952-S",
+                "1953",
+                "1953-D",
+                "1953-S",
+                "1954",
+                "1954-D",
+                "1954-S",
+                "1955",
+                "1955-D",
+                "1955-S",
+                "1956",
+                "1956-D",
+                "1957",
+                "1957-D",
+                "1958",
+                "1958-D",
+                "1959",
+                "1959-D",
+                "1960",
+                "1960-D",
+                "1961",
+                "1961-D",
+                "1962",
+                "1962-D",
+                "1963",
+                "1963-D",
+                "1964",
+                "1964-D"
+              ]
+            },
+            {
+              "id": "roosevelt-clad",
+              "name": "Roosevelt, Clad",
+              "dates": "1965–2025",
+              "diameter_mm": 17.9,
+              "description": "Copper-nickel clad. Philadelphia dimes carry a P from 1980; a few 1982 dimes were struck without it.",
+              "slots": [
+                "1965",
+                "1966",
+                "1967",
+                "1968",
+                "1968-D",
+                "1969",
+                "1969-D",
+                "1970",
+                "1970-D",
+                "1971",
+                "1971-D",
+                "1972",
+                "1972-D",
+                "1973",
+                "1973-D",
+                "1974",
+                "1974-D",
+                "1975",
+                "1975-D",
+                "1976",
+                "1976-D",
+                "1977",
+                "1977-D",
+                "1978",
+                "1978-D",
+                "1979",
+                "1979-D",
+                "1980",
+                "1980-D",
+                "1981",
+                "1981-D",
+                "1982",
+                "1982-D",
+                {
+                  "id": "1982-no-p",
+                  "label": "1982",
+                  "sub": "No P",
+                  "variety": true
+                },
+                "1983",
+                "1983-D",
+                "1984",
+                "1984-D",
+                "1985",
+                "1985-D",
+                "1986",
+                "1986-D",
+                "1987",
+                "1987-D",
+                "1988",
+                "1988-D",
+                "1989",
+                "1989-D",
+                "1990",
+                "1990-D",
+                "1991",
+                "1991-D",
+                "1992",
+                "1992-D",
+                "1993",
+                "1993-D",
+                "1994",
+                "1994-D",
+                "1995",
+                "1995-D",
+                "1996",
+                "1996-D",
+                "1997",
+                "1997-D",
+                "1998",
+                "1998-D",
+                "1999",
+                "1999-D",
+                "2000",
+                "2000-D",
+                "2001",
+                "2001-D",
+                "2002",
+                "2002-D",
+                "2003",
+                "2003-D",
+                "2004",
+                "2004-D",
+                "2005",
+                "2005-D",
+                "2006",
+                "2006-D",
+                "2007",
+                "2007-D",
+                "2008",
+                "2008-D",
+                "2009",
+                "2009-D",
+                "2010",
+                "2010-D",
+                "2011",
+                "2011-D",
+                "2012",
+                "2012-D",
+                "2013",
+                "2013-D",
+                "2014",
+                "2014-D",
+                "2015",
+                "2015-D",
+                "2016",
+                "2016-D",
+                "2017",
+                "2017-D",
+                "2018",
+                "2018-D",
+                "2019",
+                "2019-D",
+                "2020",
+                "2020-D",
+                "2021",
+                "2021-D",
+                "2022",
+                "2022-D",
+                "2023",
+                "2023-D",
+                "2024",
+                "2024-D",
+                "2025",
+                "2025-D"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "twenty-cent",
+          "name": "Twenty Cents",
+          "series": [
+            {
+              "id": "seated-liberty",
+              "name": "Seated Liberty",
+              "dates": "1875–1876",
+              "diameter_mm": 22,
+              "description": "Too close in size to the quarter and dropped after two years. 1877 and 1878 were proofs only; the 1876-CC is a great rarity.",
+              "slots": [
+                "1875",
+                "1875-CC",
+                "1875-S",
+                "1876",
+                "1876-CC"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "quarter",
+          "name": "Quarter",
+          "series": [
+            {
+              "id": "draped-bust",
+              "name": "Draped Bust",
+              "dates": "1796–1807",
+              "diameter_mm": 27.5,
+              "description": "Small eagle reverse in 1796, heraldic eagle from 1804.",
+              "slots": [
+                "1796",
+                "1804",
+                "1805",
+                "1806",
+                "1807"
+              ]
+            },
+            {
+              "id": "capped-bust",
+              "name": "Capped Bust",
+              "dates": "1815–1838",
+              "diameter_mm": 27,
+              "description": "Large size to 1828, then reduced to 24.3 mm from 1831.",
+              "slots": [
+                "1815",
+                "1818",
+                "1819",
+                "1820",
+                "1821",
+                "1822",
+                "1823",
+                "1824",
+                "1825",
+                "1828",
+                "1831",
+                "1832",
+                "1833",
+                "1834",
+                "1835",
+                "1836",
+                "1837",
+                "1838"
+              ]
+            },
+            {
+              "id": "seated-liberty",
+              "name": "Seated Liberty",
+              "dates": "1838–1891",
+              "diameter_mm": 24.3,
+              "description": "Gobrecht's Seated Liberty. Arrows and rays in 1853, arrows 1854–1855 and 1873–1874, IN GOD WE TRUST added in 1866.",
+              "slots": [
+                "1838",
+                "1839",
+                "1840",
+                "1840-O",
+                "1841",
+                "1841-O",
+                "1842",
+                "1842-O",
+                "1843",
+                "1843-O",
+                "1844",
+                "1844-O",
+                "1845",
+                "1846",
+                "1847",
+                "1847-O",
+                "1848",
+                "1849",
+                "1849-O",
+                "1850",
+                "1850-O",
+                "1851",
+                "1851-O",
+                "1852",
+                "1852-O",
+                {
+                  "id": "1853-arrows-and-rays",
+                  "label": "1853",
+                  "sub": "Arrows and Rays"
+                },
+                {
+                  "id": "1853-o-arrows-and-rays",
+                  "label": "1853-O",
+                  "sub": "Arrows and Rays"
+                },
+                "1854",
+                "1854-O",
+                "1855",
+                "1855-O",
+                "1855-S",
+                "1856",
+                "1856-O",
+                "1856-S",
+                "1857",
+                "1857-O",
+                "1857-S",
+                "1858",
+                "1858-O",
+                "1858-S",
+                "1859",
+                "1859-O",
+                "1859-S",
+                "1860",
+                "1860-O",
+                "1860-S",
+                "1861",
+                "1861-S",
+                "1862",
+                "1862-S",
+                "1863",
+                "1864",
+                "1864-S",
+                "1865",
+                "1865-S",
+                "1866",
+                "1866-S",
+                "1867",
+                "1867-S",
+                "1868",
+                "1868-S",
+                "1869",
+                "1869-S",
+                "1870",
+                "1870-CC",
+                "1871",
+                "1871-CC",
+                "1871-S",
+                "1872",
+                "1872-CC",
+                "1872-S",
+                {
+                  "id": "1873-no-arrows",
+                  "label": "1873",
+                  "sub": "No Arrows"
+                },
+                {
+                  "id": "1873-arrows",
+                  "label": "1873",
+                  "sub": "Arrows"
+                },
+                {
+                  "id": "1873-cc-arrows",
+                  "label": "1873-CC",
+                  "sub": "Arrows"
+                },
+                {
+                  "id": "1873-s-arrows",
+                  "label": "1873-S",
+                  "sub": "Arrows"
+                },
+                "1874",
+                "1874-S",
+                "1875",
+                "1875-CC",
+                "1875-S",
+                "1876",
+                "1876-CC",
+                "1876-S",
+                "1877",
+                "1877-CC",
+                "1877-S",
+                "1878",
+                "1878-CC",
+                "1878-S",
+                "1879",
+                "1880",
+                "1881",
+                "1882",
+                "1883",
+                "1884",
+                "1885",
+                "1886",
+                "1887",
+                "1888",
+                "1888-S",
+                "1889",
+                "1890",
+                "1891",
+                "1891-O",
+                "1891-S"
+              ]
+            },
+            {
+              "id": "barber",
+              "name": "Barber",
+              "dates": "1892–1916",
+              "diameter_mm": 24.3,
+              "description": "Charles Barber's Liberty Head. 1896-S, 1901-S and 1913-S are the key dates.",
+              "slots": [
+                "1892",
+                "1892-O",
+                "1892-S",
+                "1893",
+                "1893-O",
+                "1893-S",
+                "1894",
+                "1894-O",
+                "1894-S",
+                "1895",
+                "1895-O",
+                "1895-S",
+                "1896",
+                "1896-O",
+                "1896-S",
+                "1897",
+                "1897-O",
+                "1897-S",
+                "1898",
+                "1898-O",
+                "1898-S",
+                "1899",
+                "1899-O",
+                "1899-S",
+                "1900",
+                "1900-O",
+                "1900-S",
+                "1901",
+                "1901-O",
+                "1901-S",
+                "1902",
+                "1902-O",
+                "1902-S",
+                "1903",
+                "1903-O",
+                "1903-S",
+                "1904",
+                "1904-O",
+                "1905",
+                "1905-O",
+                "1905-S",
+                "1906",
+                "1906-D",
+                "1906-O",
+                "1907",
+                "1907-D",
+                "1907-O",
+                "1907-S",
+                "1908",
+                "1908-D",
+                "1908-O",
+                "1908-S",
+                "1909",
+                "1909-D",
+                "1909-O",
+                "1909-S",
+                "1910",
+                "1910-D",
+                "1911",
+                "1911-D",
+                "1911-S",
+                "1912",
+                "1912-S",
+                "1913",
+                "1913-D",
+                "1913-S",
+                "1914",
+                "1914-D",
+                "1914-S",
+                "1915",
+                "1915-D",
+                "1915-S",
+                "1916",
+                "1916-D"
+              ]
+            },
+            {
+              "id": "standing-liberty",
+              "name": "Standing Liberty",
+              "dates": "1916–1930",
+              "diameter_mm": 24.3,
+              "description": "Hermon MacNeil's Standing Liberty. Type 2 (from 1917) covers her chest in mail. From 1925 the date is recessed so it wears less.",
+              "slots": [
+                "1916",
+                {
+                  "id": "1917-type-1",
+                  "label": "1917",
+                  "sub": "Type 1"
+                },
+                {
+                  "id": "1917-d-type-1",
+                  "label": "1917-D",
+                  "sub": "Type 1"
+                },
+                {
+                  "id": "1917-s-type-1",
+                  "label": "1917-S",
+                  "sub": "Type 1"
+                },
+                {
+                  "id": "1917-type-2",
+                  "label": "1917",
+                  "sub": "Type 2"
+                },
+                {
+                  "id": "1917-d-type-2",
+                  "label": "1917-D",
+                  "sub": "Type 2"
+                },
+                {
+                  "id": "1917-s-type-2",
+                  "label": "1917-S",
+                  "sub": "Type 2"
+                },
+                "1918",
+                "1918-D",
+                "1918-S",
+                {
+                  "id": "1918-s-8-over-7",
+                  "label": "1918-S",
+                  "sub": "8 over 7",
+                  "variety": true
+                },
+                "1919",
+                "1919-D",
+                "1919-S",
+                "1920",
+                "1920-D",
+                "1920-S",
+                "1921",
+                "1923",
+                "1923-S",
+                "1924",
+                "1924-D",
+                "1924-S",
+                "1925",
+                "1926",
+                "1926-D",
+                "1926-S",
+                "1927",
+                "1927-D",
+                "1927-S",
+                "1928",
+                "1928-D",
+                "1928-S",
+                "1929",
+                "1929-D",
+                "1929-S",
+                "1930",
+                "1930-S"
+              ]
+            },
+            {
+              "id": "washington-silver",
+              "name": "Washington, Silver",
+              "dates": "1932–1964",
+              "diameter_mm": 24.3,
+              "description": "John Flanagan's Washington in 90% silver. 1932-D and 1932-S are the key dates.",
+              "slots": [
+                "1932",
+                "1932-D",
+                "1932-S",
+                "1934",
+                "1934-D",
+                "1935",
+                "1935-D",
+                "1935-S",
+                "1936",
+                "1936-D",
+                "1936-S",
+                "1937",
+                "1937-D",
+                "1937-S",
+                "1938",
+                "1938-S",
+                "1939",
+                "1939-D",
+                "1939-S",
+                "1940",
+                "1940-D",
+                "1940-S",
+                "1941",
+                "1941-D",
+                "1941-S",
+                "1942",
+                "1942-D",
+                "1942-S",
+                "1943",
+                "1943-D",
+                "1943-S",
+                "1944",
+                "1944-D",
+                "1944-S",
+                "1945",
+                "1945-D",
+                "1945-S",
+                "1946",
+                "1946-D",
+                "1946-S",
+                "1947",
+                "1947-D",
+                "1947-S",
+                "1948",
+                "1948-D",
+                "1948-S",
+                "1949",
+                "1949-D",
+                "1950",
+                "1950-D",
+                "1950-S",
+                "1951",
+                "1951-D",
+                "1951-S",
+                "1952",
+                "1952-D",
+                "1952-S",
+                "1953",
+                "1953-D",
+                "1953-S",
+                "1954",
+                "1954-D",
+                "1954-S",
+                "1955",
+                "1955-D",
+                "1956",
+                "1956-D",
+                "1957",
+                "1957-D",
+                "1958",
+                "1958-D",
+                "1959",
+                "1959-D",
+                "1960",
+                "1960-D",
+                "1961",
+                "1961-D",
+                "1962",
+                "1962-D",
+                "1963",
+                "1963-D",
+                "1964",
+                "1964-D"
+              ]
+            },
+            {
+              "id": "washington-clad",
+              "name": "Washington, Clad",
+              "dates": "1965–1998",
+              "diameter_mm": 24.3,
+              "description": "Copper-nickel clad. 1976 coins show the Bicentennial drummer boy and are dated 1776–1976; none are dated 1975.",
+              "slots": [
+                "1965",
+                "1966",
+                "1967",
+                "1968",
+                "1968-D",
+                "1969",
+                "1969-D",
+                "1970",
+                "1970-D",
+                "1971",
+                "1971-D",
+                "1972",
+                "1972-D",
+                "1973",
+                "1973-D",
+                "1974",
+                "1974-D",
+                {
+                  "id": "1976-bicentennial",
+                  "label": "1976",
+                  "sub": "Bicentennial"
+                },
+                {
+                  "id": "1976-d-bicentennial",
+                  "label": "1976-D",
+                  "sub": "Bicentennial"
+                },
+                "1977",
+                "1977-D",
+                "1978",
+                "1978-D",
+                "1979",
+                "1979-D",
+                "1980",
+                "1980-D",
+                "1981",
+                "1981-D",
+                "1982",
+                "1982-D",
+                "1983",
+                "1983-D",
+                "1984",
+                "1984-D",
+                "1985",
+                "1985-D",
+                "1986",
+                "1986-D",
+                "1987",
+                "1987-D",
+                "1988",
+                "1988-D",
+                "1989",
+                "1989-D",
+                "1990",
+                "1990-D",
+                "1991",
+                "1991-D",
+                "1992",
+                "1992-D",
+                "1993",
+                "1993-D",
+                "1994",
+                "1994-D",
+                "1995",
+                "1995-D",
+                "1996",
+                "1996-D",
+                "1997",
+                "1997-D",
+                "1998",
+                "1998-D"
+              ]
+            },
+            {
+              "id": "state",
+              "name": "50 State Quarters",
+              "dates": "1999–2008",
+              "diameter_mm": 24.3,
+              "description": "Five states a year, in the order they joined the Union.",
+              "slots": [
+                {
+                  "id": "1999-delaware",
+                  "label": "1999",
+                  "sub": "Delaware"
+                },
+                {
+                  "id": "1999-d-delaware",
+                  "label": "1999-D",
+                  "sub": "Delaware"
+                },
+                {
+                  "id": "1999-pennsylvania",
+                  "label": "1999",
+                  "sub": "Pennsylvania"
+                },
+                {
+                  "id": "1999-d-pennsylvania",
+                  "label": "1999-D",
+                  "sub": "Pennsylvania"
+                },
+                {
+                  "id": "1999-new-jersey",
+                  "label": "1999",
+                  "sub": "New Jersey"
+                },
+                {
+                  "id": "1999-d-new-jersey",
+                  "label": "1999-D",
+                  "sub": "New Jersey"
+                },
+                {
+                  "id": "1999-georgia",
+                  "label": "1999",
+                  "sub": "Georgia"
+                },
+                {
+                  "id": "1999-d-georgia",
+                  "label": "1999-D",
+                  "sub": "Georgia"
+                },
+                {
+                  "id": "1999-connecticut",
+                  "label": "1999",
+                  "sub": "Connecticut"
+                },
+                {
+                  "id": "1999-d-connecticut",
+                  "label": "1999-D",
+                  "sub": "Connecticut"
+                },
+                {
+                  "id": "2000-massachusetts",
+                  "label": "2000",
+                  "sub": "Massachusetts"
+                },
+                {
+                  "id": "2000-d-massachusetts",
+                  "label": "2000-D",
+                  "sub": "Massachusetts"
+                },
+                {
+                  "id": "2000-maryland",
+                  "label": "2000",
+                  "sub": "Maryland"
+                },
+                {
+                  "id": "2000-d-maryland",
+                  "label": "2000-D",
+                  "sub": "Maryland"
+                },
+                {
+                  "id": "2000-south-carolina",
+                  "label": "2000",
+                  "sub": "South Carolina"
+                },
+                {
+                  "id": "2000-d-south-carolina",
+                  "label": "2000-D",
+                  "sub": "South Carolina"
+                },
+                {
+                  "id": "2000-new-hampshire",
+                  "label": "2000",
+                  "sub": "New Hampshire"
+                },
+                {
+                  "id": "2000-d-new-hampshire",
+                  "label": "2000-D",
+                  "sub": "New Hampshire"
+                },
+                {
+                  "id": "2000-virginia",
+                  "label": "2000",
+                  "sub": "Virginia"
+                },
+                {
+                  "id": "2000-d-virginia",
+                  "label": "2000-D",
+                  "sub": "Virginia"
+                },
+                {
+                  "id": "2001-new-york",
+                  "label": "2001",
+                  "sub": "New York"
+                },
+                {
+                  "id": "2001-d-new-york",
+                  "label": "2001-D",
+                  "sub": "New York"
+                },
+                {
+                  "id": "2001-north-carolina",
+                  "label": "2001",
+                  "sub": "North Carolina"
+                },
+                {
+                  "id": "2001-d-north-carolina",
+                  "label": "2001-D",
+                  "sub": "North Carolina"
+                },
+                {
+                  "id": "2001-rhode-island",
+                  "label": "2001",
+                  "sub": "Rhode Island"
+                },
+                {
+                  "id": "2001-d-rhode-island",
+                  "label": "2001-D",
+                  "sub": "Rhode Island"
+                },
+                {
+                  "id": "2001-vermont",
+                  "label": "2001",
+                  "sub": "Vermont"
+                },
+                {
+                  "id": "2001-d-vermont",
+                  "label": "2001-D",
+                  "sub": "Vermont"
+                },
+                {
+                  "id": "2001-kentucky",
+                  "label": "2001",
+                  "sub": "Kentucky"
+                },
+                {
+                  "id": "2001-d-kentucky",
+                  "label": "2001-D",
+                  "sub": "Kentucky"
+                },
+                {
+                  "id": "2002-tennessee",
+                  "label": "2002",
+                  "sub": "Tennessee"
+                },
+                {
+                  "id": "2002-d-tennessee",
+                  "label": "2002-D",
+                  "sub": "Tennessee"
+                },
+                {
+                  "id": "2002-ohio",
+                  "label": "2002",
+                  "sub": "Ohio"
+                },
+                {
+                  "id": "2002-d-ohio",
+                  "label": "2002-D",
+                  "sub": "Ohio"
+                },
+                {
+                  "id": "2002-louisiana",
+                  "label": "2002",
+                  "sub": "Louisiana"
+                },
+                {
+                  "id": "2002-d-louisiana",
+                  "label": "2002-D",
+                  "sub": "Louisiana"
+                },
+                {
+                  "id": "2002-indiana",
+                  "label": "2002",
+                  "sub": "Indiana"
+                },
+                {
+                  "id": "2002-d-indiana",
+                  "label": "2002-D",
+                  "sub": "Indiana"
+                },
+                {
+                  "id": "2002-mississippi",
+                  "label": "2002",
+                  "sub": "Mississippi"
+                },
+                {
+                  "id": "2002-d-mississippi",
+                  "label": "2002-D",
+                  "sub": "Mississippi"
+                },
+                {
+                  "id": "2003-illinois",
+                  "label": "2003",
+                  "sub": "Illinois"
+                },
+                {
+                  "id": "2003-d-illinois",
+                  "label": "2003-D",
+                  "sub": "Illinois"
+                },
+                {
+                  "id": "2003-alabama",
+                  "label": "2003",
+                  "sub": "Alabama"
+                },
+                {
+                  "id": "2003-d-alabama",
+                  "label": "2003-D",
+                  "sub": "Alabama"
+                },
+                {
+                  "id": "2003-maine",
+                  "label": "2003",
+                  "sub": "Maine"
+                },
+                {
+                  "id": "2003-d-maine",
+                  "label": "2003-D",
+                  "sub": "Maine"
+                },
+                {
+                  "id": "2003-missouri",
+                  "label": "2003",
+                  "sub": "Missouri"
+                },
+                {
+                  "id": "2003-d-missouri",
+                  "label": "2003-D",
+                  "sub": "Missouri"
+                },
+                {
+                  "id": "2003-arkansas",
+                  "label": "2003",
+                  "sub": "Arkansas"
+                },
+                {
+                  "id": "2003-d-arkansas",
+                  "label": "2003-D",
+                  "sub": "Arkansas"
+                },
+                {
+                  "id": "2004-michigan",
+                  "label": "2004",
+                  "sub": "Michigan"
+                },
+                {
+                  "id": "2004-d-michigan",
+                  "label": "2004-D",
+                  "sub": "Michigan"
+                },
+                {
+                  "id": "2004-florida",
+                  "label": "2004",
+                  "sub": "Florida"
+                },
+                {
+                  "id": "2004-d-florida",
+                  "label": "2004-D",
+                  "sub": "Florida"
+                },
+                {
+                  "id": "2004-texas",
+                  "label": "2004",
+                  "sub": "Texas"
+                },
+                {
+                  "id": "2004-d-texas",
+                  "label": "2004-D",
+                  "sub": "Texas"
+                },
+                {
+                  "id": "2004-iowa",
+                  "label": "2004",
+                  "sub": "Iowa"
+                },
+                {
+                  "id": "2004-d-iowa",
+                  "label": "2004-D",
+                  "sub": "Iowa"
+                },
+                {
+                  "id": "2004-wisconsin",
+                  "label": "2004",
+                  "sub": "Wisconsin"
+                },
+                {
+                  "id": "2004-d-wisconsin",
+                  "label": "2004-D",
+                  "sub": "Wisconsin"
+                },
+                {
+                  "id": "2005-california",
+                  "label": "2005",
+                  "sub": "California"
+                },
+                {
+                  "id": "2005-d-california",
+                  "label": "2005-D",
+                  "sub": "California"
+                },
+                {
+                  "id": "2005-minnesota",
+                  "label": "2005",
+                  "sub": "Minnesota"
+                },
+                {
+                  "id": "2005-d-minnesota",
+                  "label": "2005-D",
+                  "sub": "Minnesota"
+                },
+                {
+                  "id": "2005-oregon",
+                  "label": "2005",
+                  "sub": "Oregon"
+                },
+                {
+                  "id": "2005-d-oregon",
+                  "label": "2005-D",
+                  "sub": "Oregon"
+                },
+                {
+                  "id": "2005-kansas",
+                  "label": "2005",
+                  "sub": "Kansas"
+                },
+                {
+                  "id": "2005-d-kansas",
+                  "label": "2005-D",
+                  "sub": "Kansas"
+                },
+                {
+                  "id": "2005-west-virginia",
+                  "label": "2005",
+                  "sub": "West Virginia"
+                },
+                {
+                  "id": "2005-d-west-virginia",
+                  "label": "2005-D",
+                  "sub": "West Virginia"
+                },
+                {
+                  "id": "2006-nevada",
+                  "label": "2006",
+                  "sub": "Nevada"
+                },
+                {
+                  "id": "2006-d-nevada",
+                  "label": "2006-D",
+                  "sub": "Nevada"
+                },
+                {
+                  "id": "2006-nebraska",
+                  "label": "2006",
+                  "sub": "Nebraska"
+                },
+                {
+                  "id": "2006-d-nebraska",
+                  "label": "2006-D",
+                  "sub": "Nebraska"
+                },
+                {
+                  "id": "2006-colorado",
+                  "label": "2006",
+                  "sub": "Colorado"
+                },
+                {
+                  "id": "2006-d-colorado",
+                  "label": "2006-D",
+                  "sub": "Colorado"
+                },
+                {
+                  "id": "2006-north-dakota",
+                  "label": "2006",
+                  "sub": "North Dakota"
+                },
+                {
+                  "id": "2006-d-north-dakota",
+                  "label": "2006-D",
+                  "sub": "North Dakota"
+                },
+                {
+                  "id": "2006-south-dakota",
+                  "label": "2006",
+                  "sub": "South Dakota"
+                },
+                {
+                  "id": "2006-d-south-dakota",
+                  "label": "2006-D",
+                  "sub": "South Dakota"
+                },
+                {
+                  "id": "2007-montana",
+                  "label": "2007",
+                  "sub": "Montana"
+                },
+                {
+                  "id": "2007-d-montana",
+                  "label": "2007-D",
+                  "sub": "Montana"
+                },
+                {
+                  "id": "2007-washington",
+                  "label": "2007",
+                  "sub": "Washington"
+                },
+                {
+                  "id": "2007-d-washington",
+                  "label": "2007-D",
+                  "sub": "Washington"
+                },
+                {
+                  "id": "2007-idaho",
+                  "label": "2007",
+                  "sub": "Idaho"
+                },
+                {
+                  "id": "2007-d-idaho",
+                  "label": "2007-D",
+                  "sub": "Idaho"
+                },
+                {
+                  "id": "2007-wyoming",
+                  "label": "2007",
+                  "sub": "Wyoming"
+                },
+                {
+                  "id": "2007-d-wyoming",
+                  "label": "2007-D",
+                  "sub": "Wyoming"
+                },
+                {
+                  "id": "2007-utah",
+                  "label": "2007",
+                  "sub": "Utah"
+                },
+                {
+                  "id": "2007-d-utah",
+                  "label": "2007-D",
+                  "sub": "Utah"
+                },
+                {
+                  "id": "2008-oklahoma",
+                  "label": "2008",
+                  "sub": "Oklahoma"
+                },
+                {
+                  "id": "2008-d-oklahoma",
+                  "label": "2008-D",
+                  "sub": "Oklahoma"
+                },
+                {
+                  "id": "2008-new-mexico",
+                  "label": "2008",
+                  "sub": "New Mexico"
+                },
+                {
+                  "id": "2008-d-new-mexico",
+                  "label": "2008-D",
+                  "sub": "New Mexico"
+                },
+                {
+                  "id": "2008-arizona",
+                  "label": "2008",
+                  "sub": "Arizona"
+                },
+                {
+                  "id": "2008-d-arizona",
+                  "label": "2008-D",
+                  "sub": "Arizona"
+                },
+                {
+                  "id": "2008-alaska",
+                  "label": "2008",
+                  "sub": "Alaska"
+                },
+                {
+                  "id": "2008-d-alaska",
+                  "label": "2008-D",
+                  "sub": "Alaska"
+                },
+                {
+                  "id": "2008-hawaii",
+                  "label": "2008",
+                  "sub": "Hawaii"
+                },
+                {
+                  "id": "2008-d-hawaii",
+                  "label": "2008-D",
+                  "sub": "Hawaii"
+                }
+              ]
+            },
+            {
+              "id": "territories",
+              "name": "DC and Territories",
+              "dates": "2009",
+              "diameter_mm": 24.3,
+              "description": "An extra year added to honor the District of Columbia and the five US territories.",
+              "slots": [
+                {
+                  "id": "2009-district-of-columbia",
+                  "label": "2009",
+                  "sub": "District of Columbia"
+                },
+                {
+                  "id": "2009-d-district-of-columbia",
+                  "label": "2009-D",
+                  "sub": "District of Columbia"
+                },
+                {
+                  "id": "2009-puerto-rico",
+                  "label": "2009",
+                  "sub": "Puerto Rico"
+                },
+                {
+                  "id": "2009-d-puerto-rico",
+                  "label": "2009-D",
+                  "sub": "Puerto Rico"
+                },
+                {
+                  "id": "2009-guam",
+                  "label": "2009",
+                  "sub": "Guam"
+                },
+                {
+                  "id": "2009-d-guam",
+                  "label": "2009-D",
+                  "sub": "Guam"
+                },
+                {
+                  "id": "2009-american-samoa",
+                  "label": "2009",
+                  "sub": "American Samoa"
+                },
+                {
+                  "id": "2009-d-american-samoa",
+                  "label": "2009-D",
+                  "sub": "American Samoa"
+                },
+                {
+                  "id": "2009-u-s-virgin-islands",
+                  "label": "2009",
+                  "sub": "U.S. Virgin Islands"
+                },
+                {
+                  "id": "2009-d-u-s-virgin-islands",
+                  "label": "2009-D",
+                  "sub": "U.S. Virgin Islands"
+                },
+                {
+                  "id": "2009-northern-mariana-islands",
+                  "label": "2009",
+                  "sub": "Northern Mariana Islands"
+                },
+                {
+                  "id": "2009-d-northern-mariana-islands",
+                  "label": "2009-D",
+                  "sub": "Northern Mariana Islands"
+                }
+              ]
+            },
+            {
+              "id": "america-the-beautiful",
+              "name": "America the Beautiful",
+              "dates": "2010–2021",
+              "diameter_mm": 24.3,
+              "description": "One national park or site from each state and territory.",
+              "slots": [
+                {
+                  "id": "2010-hot-springs",
+                  "label": "2010",
+                  "sub": "Hot Springs"
+                },
+                {
+                  "id": "2010-d-hot-springs",
+                  "label": "2010-D",
+                  "sub": "Hot Springs"
+                },
+                {
+                  "id": "2010-yellowstone",
+                  "label": "2010",
+                  "sub": "Yellowstone"
+                },
+                {
+                  "id": "2010-d-yellowstone",
+                  "label": "2010-D",
+                  "sub": "Yellowstone"
+                },
+                {
+                  "id": "2010-yosemite",
+                  "label": "2010",
+                  "sub": "Yosemite"
+                },
+                {
+                  "id": "2010-d-yosemite",
+                  "label": "2010-D",
+                  "sub": "Yosemite"
+                },
+                {
+                  "id": "2010-grand-canyon",
+                  "label": "2010",
+                  "sub": "Grand Canyon"
+                },
+                {
+                  "id": "2010-d-grand-canyon",
+                  "label": "2010-D",
+                  "sub": "Grand Canyon"
+                },
+                {
+                  "id": "2010-mount-hood",
+                  "label": "2010",
+                  "sub": "Mount Hood"
+                },
+                {
+                  "id": "2010-d-mount-hood",
+                  "label": "2010-D",
+                  "sub": "Mount Hood"
+                },
+                {
+                  "id": "2011-gettysburg",
+                  "label": "2011",
+                  "sub": "Gettysburg"
+                },
+                {
+                  "id": "2011-d-gettysburg",
+                  "label": "2011-D",
+                  "sub": "Gettysburg"
+                },
+                {
+                  "id": "2011-glacier",
+                  "label": "2011",
+                  "sub": "Glacier"
+                },
+                {
+                  "id": "2011-d-glacier",
+                  "label": "2011-D",
+                  "sub": "Glacier"
+                },
+                {
+                  "id": "2011-olympic",
+                  "label": "2011",
+                  "sub": "Olympic"
+                },
+                {
+                  "id": "2011-d-olympic",
+                  "label": "2011-D",
+                  "sub": "Olympic"
+                },
+                {
+                  "id": "2011-vicksburg",
+                  "label": "2011",
+                  "sub": "Vicksburg"
+                },
+                {
+                  "id": "2011-d-vicksburg",
+                  "label": "2011-D",
+                  "sub": "Vicksburg"
+                },
+                {
+                  "id": "2011-chickasaw",
+                  "label": "2011",
+                  "sub": "Chickasaw"
+                },
+                {
+                  "id": "2011-d-chickasaw",
+                  "label": "2011-D",
+                  "sub": "Chickasaw"
+                },
+                {
+                  "id": "2012-el-yunque",
+                  "label": "2012",
+                  "sub": "El Yunque"
+                },
+                {
+                  "id": "2012-d-el-yunque",
+                  "label": "2012-D",
+                  "sub": "El Yunque"
+                },
+                {
+                  "id": "2012-chaco-culture",
+                  "label": "2012",
+                  "sub": "Chaco Culture"
+                },
+                {
+                  "id": "2012-d-chaco-culture",
+                  "label": "2012-D",
+                  "sub": "Chaco Culture"
+                },
+                {
+                  "id": "2012-acadia",
+                  "label": "2012",
+                  "sub": "Acadia"
+                },
+                {
+                  "id": "2012-d-acadia",
+                  "label": "2012-D",
+                  "sub": "Acadia"
+                },
+                {
+                  "id": "2012-hawaii-volcanoes",
+                  "label": "2012",
+                  "sub": "Hawaii Volcanoes"
+                },
+                {
+                  "id": "2012-d-hawaii-volcanoes",
+                  "label": "2012-D",
+                  "sub": "Hawaii Volcanoes"
+                },
+                {
+                  "id": "2012-denali",
+                  "label": "2012",
+                  "sub": "Denali"
+                },
+                {
+                  "id": "2012-d-denali",
+                  "label": "2012-D",
+                  "sub": "Denali"
+                },
+                {
+                  "id": "2013-white-mountain",
+                  "label": "2013",
+                  "sub": "White Mountain"
+                },
+                {
+                  "id": "2013-d-white-mountain",
+                  "label": "2013-D",
+                  "sub": "White Mountain"
+                },
+                {
+                  "id": "2013-perry-s-victory",
+                  "label": "2013",
+                  "sub": "Perry's Victory"
+                },
+                {
+                  "id": "2013-d-perry-s-victory",
+                  "label": "2013-D",
+                  "sub": "Perry's Victory"
+                },
+                {
+                  "id": "2013-great-basin",
+                  "label": "2013",
+                  "sub": "Great Basin"
+                },
+                {
+                  "id": "2013-d-great-basin",
+                  "label": "2013-D",
+                  "sub": "Great Basin"
+                },
+                {
+                  "id": "2013-fort-mchenry",
+                  "label": "2013",
+                  "sub": "Fort McHenry"
+                },
+                {
+                  "id": "2013-d-fort-mchenry",
+                  "label": "2013-D",
+                  "sub": "Fort McHenry"
+                },
+                {
+                  "id": "2013-mount-rushmore",
+                  "label": "2013",
+                  "sub": "Mount Rushmore"
+                },
+                {
+                  "id": "2013-d-mount-rushmore",
+                  "label": "2013-D",
+                  "sub": "Mount Rushmore"
+                },
+                {
+                  "id": "2014-great-smoky-mountains",
+                  "label": "2014",
+                  "sub": "Great Smoky Mountains"
+                },
+                {
+                  "id": "2014-d-great-smoky-mountains",
+                  "label": "2014-D",
+                  "sub": "Great Smoky Mountains"
+                },
+                {
+                  "id": "2014-shenandoah",
+                  "label": "2014",
+                  "sub": "Shenandoah"
+                },
+                {
+                  "id": "2014-d-shenandoah",
+                  "label": "2014-D",
+                  "sub": "Shenandoah"
+                },
+                {
+                  "id": "2014-arches",
+                  "label": "2014",
+                  "sub": "Arches"
+                },
+                {
+                  "id": "2014-d-arches",
+                  "label": "2014-D",
+                  "sub": "Arches"
+                },
+                {
+                  "id": "2014-great-sand-dunes",
+                  "label": "2014",
+                  "sub": "Great Sand Dunes"
+                },
+                {
+                  "id": "2014-d-great-sand-dunes",
+                  "label": "2014-D",
+                  "sub": "Great Sand Dunes"
+                },
+                {
+                  "id": "2014-everglades",
+                  "label": "2014",
+                  "sub": "Everglades"
+                },
+                {
+                  "id": "2014-d-everglades",
+                  "label": "2014-D",
+                  "sub": "Everglades"
+                },
+                {
+                  "id": "2015-homestead",
+                  "label": "2015",
+                  "sub": "Homestead"
+                },
+                {
+                  "id": "2015-d-homestead",
+                  "label": "2015-D",
+                  "sub": "Homestead"
+                },
+                {
+                  "id": "2015-kisatchie",
+                  "label": "2015",
+                  "sub": "Kisatchie"
+                },
+                {
+                  "id": "2015-d-kisatchie",
+                  "label": "2015-D",
+                  "sub": "Kisatchie"
+                },
+                {
+                  "id": "2015-blue-ridge-parkway",
+                  "label": "2015",
+                  "sub": "Blue Ridge Parkway"
+                },
+                {
+                  "id": "2015-d-blue-ridge-parkway",
+                  "label": "2015-D",
+                  "sub": "Blue Ridge Parkway"
+                },
+                {
+                  "id": "2015-bombay-hook",
+                  "label": "2015",
+                  "sub": "Bombay Hook"
+                },
+                {
+                  "id": "2015-d-bombay-hook",
+                  "label": "2015-D",
+                  "sub": "Bombay Hook"
+                },
+                {
+                  "id": "2015-saratoga",
+                  "label": "2015",
+                  "sub": "Saratoga"
+                },
+                {
+                  "id": "2015-d-saratoga",
+                  "label": "2015-D",
+                  "sub": "Saratoga"
+                },
+                {
+                  "id": "2016-shawnee",
+                  "label": "2016",
+                  "sub": "Shawnee"
+                },
+                {
+                  "id": "2016-d-shawnee",
+                  "label": "2016-D",
+                  "sub": "Shawnee"
+                },
+                {
+                  "id": "2016-cumberland-gap",
+                  "label": "2016",
+                  "sub": "Cumberland Gap"
+                },
+                {
+                  "id": "2016-d-cumberland-gap",
+                  "label": "2016-D",
+                  "sub": "Cumberland Gap"
+                },
+                {
+                  "id": "2016-harpers-ferry",
+                  "label": "2016",
+                  "sub": "Harpers Ferry"
+                },
+                {
+                  "id": "2016-d-harpers-ferry",
+                  "label": "2016-D",
+                  "sub": "Harpers Ferry"
+                },
+                {
+                  "id": "2016-theodore-roosevelt",
+                  "label": "2016",
+                  "sub": "Theodore Roosevelt"
+                },
+                {
+                  "id": "2016-d-theodore-roosevelt",
+                  "label": "2016-D",
+                  "sub": "Theodore Roosevelt"
+                },
+                {
+                  "id": "2016-fort-moultrie",
+                  "label": "2016",
+                  "sub": "Fort Moultrie"
+                },
+                {
+                  "id": "2016-d-fort-moultrie",
+                  "label": "2016-D",
+                  "sub": "Fort Moultrie"
+                },
+                {
+                  "id": "2017-effigy-mounds",
+                  "label": "2017",
+                  "sub": "Effigy Mounds"
+                },
+                {
+                  "id": "2017-d-effigy-mounds",
+                  "label": "2017-D",
+                  "sub": "Effigy Mounds"
+                },
+                {
+                  "id": "2017-frederick-douglass",
+                  "label": "2017",
+                  "sub": "Frederick Douglass"
+                },
+                {
+                  "id": "2017-d-frederick-douglass",
+                  "label": "2017-D",
+                  "sub": "Frederick Douglass"
+                },
+                {
+                  "id": "2017-ozark-riverways",
+                  "label": "2017",
+                  "sub": "Ozark Riverways"
+                },
+                {
+                  "id": "2017-d-ozark-riverways",
+                  "label": "2017-D",
+                  "sub": "Ozark Riverways"
+                },
+                {
+                  "id": "2017-ellis-island",
+                  "label": "2017",
+                  "sub": "Ellis Island"
+                },
+                {
+                  "id": "2017-d-ellis-island",
+                  "label": "2017-D",
+                  "sub": "Ellis Island"
+                },
+                {
+                  "id": "2017-george-rogers-clark",
+                  "label": "2017",
+                  "sub": "George Rogers Clark"
+                },
+                {
+                  "id": "2017-d-george-rogers-clark",
+                  "label": "2017-D",
+                  "sub": "George Rogers Clark"
+                },
+                {
+                  "id": "2018-pictured-rocks",
+                  "label": "2018",
+                  "sub": "Pictured Rocks"
+                },
+                {
+                  "id": "2018-d-pictured-rocks",
+                  "label": "2018-D",
+                  "sub": "Pictured Rocks"
+                },
+                {
+                  "id": "2018-apostle-islands",
+                  "label": "2018",
+                  "sub": "Apostle Islands"
+                },
+                {
+                  "id": "2018-d-apostle-islands",
+                  "label": "2018-D",
+                  "sub": "Apostle Islands"
+                },
+                {
+                  "id": "2018-voyageurs",
+                  "label": "2018",
+                  "sub": "Voyageurs"
+                },
+                {
+                  "id": "2018-d-voyageurs",
+                  "label": "2018-D",
+                  "sub": "Voyageurs"
+                },
+                {
+                  "id": "2018-cumberland-island",
+                  "label": "2018",
+                  "sub": "Cumberland Island"
+                },
+                {
+                  "id": "2018-d-cumberland-island",
+                  "label": "2018-D",
+                  "sub": "Cumberland Island"
+                },
+                {
+                  "id": "2018-block-island",
+                  "label": "2018",
+                  "sub": "Block Island"
+                },
+                {
+                  "id": "2018-d-block-island",
+                  "label": "2018-D",
+                  "sub": "Block Island"
+                },
+                {
+                  "id": "2019-lowell",
+                  "label": "2019",
+                  "sub": "Lowell"
+                },
+                {
+                  "id": "2019-d-lowell",
+                  "label": "2019-D",
+                  "sub": "Lowell"
+                },
+                {
+                  "id": "2019-american-memorial-park",
+                  "label": "2019",
+                  "sub": "American Memorial Park"
+                },
+                {
+                  "id": "2019-d-american-memorial-park",
+                  "label": "2019-D",
+                  "sub": "American Memorial Park"
+                },
+                {
+                  "id": "2019-war-in-the-pacific",
+                  "label": "2019",
+                  "sub": "War in the Pacific"
+                },
+                {
+                  "id": "2019-d-war-in-the-pacific",
+                  "label": "2019-D",
+                  "sub": "War in the Pacific"
+                },
+                {
+                  "id": "2019-san-antonio-missions",
+                  "label": "2019",
+                  "sub": "San Antonio Missions"
+                },
+                {
+                  "id": "2019-d-san-antonio-missions",
+                  "label": "2019-D",
+                  "sub": "San Antonio Missions"
+                },
+                {
+                  "id": "2019-frank-church-river-of-no-return",
+                  "label": "2019",
+                  "sub": "Frank Church River of No Return"
+                },
+                {
+                  "id": "2019-d-frank-church-river-of-no-return",
+                  "label": "2019-D",
+                  "sub": "Frank Church River of No Return"
+                },
+                {
+                  "id": "2020-american-samoa",
+                  "label": "2020",
+                  "sub": "American Samoa"
+                },
+                {
+                  "id": "2020-d-american-samoa",
+                  "label": "2020-D",
+                  "sub": "American Samoa"
+                },
+                {
+                  "id": "2020-weir-farm",
+                  "label": "2020",
+                  "sub": "Weir Farm"
+                },
+                {
+                  "id": "2020-d-weir-farm",
+                  "label": "2020-D",
+                  "sub": "Weir Farm"
+                },
+                {
+                  "id": "2020-salt-river-bay",
+                  "label": "2020",
+                  "sub": "Salt River Bay"
+                },
+                {
+                  "id": "2020-d-salt-river-bay",
+                  "label": "2020-D",
+                  "sub": "Salt River Bay"
+                },
+                {
+                  "id": "2020-marsh-billings-rockefeller",
+                  "label": "2020",
+                  "sub": "Marsh-Billings-Rockefeller"
+                },
+                {
+                  "id": "2020-d-marsh-billings-rockefeller",
+                  "label": "2020-D",
+                  "sub": "Marsh-Billings-Rockefeller"
+                },
+                {
+                  "id": "2020-tallgrass-prairie",
+                  "label": "2020",
+                  "sub": "Tallgrass Prairie"
+                },
+                {
+                  "id": "2020-d-tallgrass-prairie",
+                  "label": "2020-D",
+                  "sub": "Tallgrass Prairie"
+                },
+                {
+                  "id": "2021-tuskegee-airmen",
+                  "label": "2021",
+                  "sub": "Tuskegee Airmen"
+                },
+                {
+                  "id": "2021-d-tuskegee-airmen",
+                  "label": "2021-D",
+                  "sub": "Tuskegee Airmen"
+                }
+              ]
+            },
+            {
+              "id": "crossing-the-delaware",
+              "name": "Crossing the Delaware",
+              "dates": "2021",
+              "diameter_mm": 24.3,
+              "description": "Washington crossing the Delaware, a one-year design between programs.",
+              "slots": [
+                "2021",
+                "2021-D"
+              ]
+            },
+            {
+              "id": "american-women",
+              "name": "American Women",
+              "dates": "2022–2025",
+              "diameter_mm": 24.3,
+              "description": "Five women a year, with Laura Gardin Fraser's Washington portrait.",
+              "slots": [
+                {
+                  "id": "2022-maya-angelou",
+                  "label": "2022",
+                  "sub": "Maya Angelou"
+                },
+                {
+                  "id": "2022-d-maya-angelou",
+                  "label": "2022-D",
+                  "sub": "Maya Angelou"
+                },
+                {
+                  "id": "2022-sally-ride",
+                  "label": "2022",
+                  "sub": "Sally Ride"
+                },
+                {
+                  "id": "2022-d-sally-ride",
+                  "label": "2022-D",
+                  "sub": "Sally Ride"
+                },
+                {
+                  "id": "2022-wilma-mankiller",
+                  "label": "2022",
+                  "sub": "Wilma Mankiller"
+                },
+                {
+                  "id": "2022-d-wilma-mankiller",
+                  "label": "2022-D",
+                  "sub": "Wilma Mankiller"
+                },
+                {
+                  "id": "2022-nina-otero-warren",
+                  "label": "2022",
+                  "sub": "Nina Otero-Warren"
+                },
+                {
+                  "id": "2022-d-nina-otero-warren",
+                  "label": "2022-D",
+                  "sub": "Nina Otero-Warren"
+                },
+                {
+                  "id": "2022-anna-may-wong",
+                  "label": "2022",
+                  "sub": "Anna May Wong"
+                },
+                {
+                  "id": "2022-d-anna-may-wong",
+                  "label": "2022-D",
+                  "sub": "Anna May Wong"
+                },
+                {
+                  "id": "2023-bessie-coleman",
+                  "label": "2023",
+                  "sub": "Bessie Coleman"
+                },
+                {
+                  "id": "2023-d-bessie-coleman",
+                  "label": "2023-D",
+                  "sub": "Bessie Coleman"
+                },
+                {
+                  "id": "2023-edith-kanaka-ole",
+                  "label": "2023",
+                  "sub": "Edith Kanakaʻole"
+                },
+                {
+                  "id": "2023-d-edith-kanaka-ole",
+                  "label": "2023-D",
+                  "sub": "Edith Kanakaʻole"
+                },
+                {
+                  "id": "2023-eleanor-roosevelt",
+                  "label": "2023",
+                  "sub": "Eleanor Roosevelt"
+                },
+                {
+                  "id": "2023-d-eleanor-roosevelt",
+                  "label": "2023-D",
+                  "sub": "Eleanor Roosevelt"
+                },
+                {
+                  "id": "2023-jovita-id-r",
+                  "label": "2023",
+                  "sub": "Jovita Idár"
+                },
+                {
+                  "id": "2023-d-jovita-id-r",
+                  "label": "2023-D",
+                  "sub": "Jovita Idár"
+                },
+                {
+                  "id": "2023-maria-tallchief",
+                  "label": "2023",
+                  "sub": "Maria Tallchief"
+                },
+                {
+                  "id": "2023-d-maria-tallchief",
+                  "label": "2023-D",
+                  "sub": "Maria Tallchief"
+                },
+                {
+                  "id": "2024-patsy-takemoto-mink",
+                  "label": "2024",
+                  "sub": "Patsy Takemoto Mink"
+                },
+                {
+                  "id": "2024-d-patsy-takemoto-mink",
+                  "label": "2024-D",
+                  "sub": "Patsy Takemoto Mink"
+                },
+                {
+                  "id": "2024-mary-edwards-walker",
+                  "label": "2024",
+                  "sub": "Mary Edwards Walker"
+                },
+                {
+                  "id": "2024-d-mary-edwards-walker",
+                  "label": "2024-D",
+                  "sub": "Mary Edwards Walker"
+                },
+                {
+                  "id": "2024-pauli-murray",
+                  "label": "2024",
+                  "sub": "Pauli Murray"
+                },
+                {
+                  "id": "2024-d-pauli-murray",
+                  "label": "2024-D",
+                  "sub": "Pauli Murray"
+                },
+                {
+                  "id": "2024-zitkala-a",
+                  "label": "2024",
+                  "sub": "Zitkala-Ša"
+                },
+                {
+                  "id": "2024-d-zitkala-a",
+                  "label": "2024-D",
+                  "sub": "Zitkala-Ša"
+                },
+                {
+                  "id": "2024-celia-cruz",
+                  "label": "2024",
+                  "sub": "Celia Cruz"
+                },
+                {
+                  "id": "2024-d-celia-cruz",
+                  "label": "2024-D",
+                  "sub": "Celia Cruz"
+                },
+                {
+                  "id": "2025-ida-b-wells",
+                  "label": "2025",
+                  "sub": "Ida B. Wells"
+                },
+                {
+                  "id": "2025-d-ida-b-wells",
+                  "label": "2025-D",
+                  "sub": "Ida B. Wells"
+                },
+                {
+                  "id": "2025-juliette-gordon-low",
+                  "label": "2025",
+                  "sub": "Juliette Gordon Low"
+                },
+                {
+                  "id": "2025-d-juliette-gordon-low",
+                  "label": "2025-D",
+                  "sub": "Juliette Gordon Low"
+                },
+                {
+                  "id": "2025-vera-rubin",
+                  "label": "2025",
+                  "sub": "Vera Rubin"
+                },
+                {
+                  "id": "2025-d-vera-rubin",
+                  "label": "2025-D",
+                  "sub": "Vera Rubin"
+                },
+                {
+                  "id": "2025-stacey-park-milbern",
+                  "label": "2025",
+                  "sub": "Stacey Park Milbern"
+                },
+                {
+                  "id": "2025-d-stacey-park-milbern",
+                  "label": "2025-D",
+                  "sub": "Stacey Park Milbern"
+                },
+                {
+                  "id": "2025-althea-gibson",
+                  "label": "2025",
+                  "sub": "Althea Gibson"
+                },
+                {
+                  "id": "2025-d-althea-gibson",
+                  "label": "2025-D",
+                  "sub": "Althea Gibson"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "half-dollar",
+          "name": "Half Dollar",
+          "series": [
+            {
+              "id": "flowing-hair",
+              "name": "Flowing Hair",
+              "dates": "1794–1795",
+              "diameter_mm": 32.5,
+              "description": "The first US half dollars.",
+              "slots": [
+                "1794",
+                "1795"
+              ]
+            },
+            {
+              "id": "draped-bust",
+              "name": "Draped Bust",
+              "dates": "1796–1807",
+              "diameter_mm": 32.5,
+              "description": "Small eagle reverse in 1796–1797, heraldic eagle from 1801.",
+              "slots": [
+                "1796",
+                "1797",
+                "1801",
+                "1802",
+                "1803",
+                "1805",
+                "1806",
+                "1807"
+              ]
+            },
+            {
+              "id": "capped-bust",
+              "name": "Capped Bust",
+              "dates": "1807–1839",
+              "diameter_mm": 32.5,
+              "description": "John Reich's Capped Bust, with a lettered edge until 1836, then a reeded edge. No halves are dated 1816.",
+              "slots": [
+                "1807",
+                "1808",
+                "1809",
+                "1810",
+                "1811",
+                "1812",
+                "1813",
+                "1814",
+                "1815",
+                "1817",
+                "1818",
+                "1819",
+                "1820",
+                "1821",
+                "1822",
+                "1823",
+                "1824",
+                "1825",
+                "1826",
+                "1827",
+                "1828",
+                "1829",
+                "1830",
+                "1831",
+                "1832",
+                "1833",
+                "1834",
+                "1835",
+                "1836",
+                {
+                  "id": "1836-reeded-edge",
+                  "label": "1836",
+                  "sub": "Reeded Edge"
+                },
+                "1837",
+                "1838",
+                "1838-O",
+                "1839",
+                "1839-O"
+              ]
+            },
+            {
+              "id": "seated-liberty",
+              "name": "Seated Liberty",
+              "dates": "1839–1891",
+              "diameter_mm": 30.6,
+              "description": "Gobrecht's Seated Liberty. Arrows and rays in 1853, arrows 1854–1855 and 1873–1874, motto added in 1866.",
+              "slots": [
+                "1839",
+                "1840",
+                "1840-O",
+                "1841",
+                "1841-O",
+                "1842",
+                "1842-O",
+                "1843",
+                "1843-O",
+                "1844",
+                "1844-O",
+                "1845",
+                "1845-O",
+                "1846",
+                "1846-O",
+                "1847",
+                "1847-O",
+                "1848",
+                "1848-O",
+                "1849",
+                "1849-O",
+                "1850",
+                "1850-O",
+                "1851",
+                "1851-O",
+                "1852",
+                "1852-O",
+                {
+                  "id": "1853-arrows-and-rays",
+                  "label": "1853",
+                  "sub": "Arrows and Rays"
+                },
+                {
+                  "id": "1853-o-arrows-and-rays",
+                  "label": "1853-O",
+                  "sub": "Arrows and Rays"
+                },
+                "1854",
+                "1854-O",
+                "1855",
+                "1855-O",
+                "1855-S",
+                "1856",
+                "1856-O",
+                "1856-S",
+                "1857",
+                "1857-O",
+                "1857-S",
+                "1858",
+                "1858-O",
+                "1858-S",
+                "1859",
+                "1859-O",
+                "1859-S",
+                "1860",
+                "1860-O",
+                "1860-S",
+                "1861",
+                "1861-O",
+                "1861-S",
+                "1862",
+                "1862-S",
+                "1863",
+                "1863-S",
+                "1864",
+                "1864-S",
+                "1865",
+                "1865-S",
+                {
+                  "id": "1866-s-no-motto",
+                  "label": "1866-S",
+                  "sub": "No Motto"
+                },
+                "1866",
+                "1866-S",
+                "1867",
+                "1867-S",
+                "1868",
+                "1868-S",
+                "1869",
+                "1869-S",
+                "1870",
+                "1870-CC",
+                "1870-S",
+                "1871",
+                "1871-CC",
+                "1871-S",
+                "1872",
+                "1872-CC",
+                "1872-S",
+                {
+                  "id": "1873-no-arrows",
+                  "label": "1873",
+                  "sub": "No Arrows"
+                },
+                {
+                  "id": "1873-cc-no-arrows",
+                  "label": "1873-CC",
+                  "sub": "No Arrows"
+                },
+                {
+                  "id": "1873-arrows",
+                  "label": "1873",
+                  "sub": "Arrows"
+                },
+                {
+                  "id": "1873-cc-arrows",
+                  "label": "1873-CC",
+                  "sub": "Arrows"
+                },
+                {
+                  "id": "1873-s-arrows",
+                  "label": "1873-S",
+                  "sub": "Arrows"
+                },
+                "1874",
+                "1874-CC",
+                "1874-S",
+                "1875",
+                "1875-CC",
+                "1875-S",
+                "1876",
+                "1876-CC",
+                "1876-S",
+                "1877",
+                "1877-CC",
+                "1877-S",
+                "1878",
+                "1878-CC",
+                "1878-S",
+                "1879",
+                "1880",
+                "1881",
+                "1882",
+                "1883",
+                "1884",
+                "1885",
+                "1886",
+                "1887",
+                "1888",
+                "1889",
+                "1890",
+                "1891"
+              ]
+            },
+            {
+              "id": "barber",
+              "name": "Barber",
+              "dates": "1892–1915",
+              "diameter_mm": 30.6,
+              "description": "Charles Barber's Liberty Head.",
+              "slots": [
+                "1892",
+                "1892-O",
+                "1892-S",
+                "1893",
+                "1893-O",
+                "1893-S",
+                "1894",
+                "1894-O",
+                "1894-S",
+                "1895",
+                "1895-O",
+                "1895-S",
+                "1896",
+                "1896-O",
+                "1896-S",
+                "1897",
+                "1897-O",
+                "1897-S",
+                "1898",
+                "1898-O",
+                "1898-S",
+                "1899",
+                "1899-O",
+                "1899-S",
+                "1900",
+                "1900-O",
+                "1900-S",
+                "1901",
+                "1901-O",
+                "1901-S",
+                "1902",
+                "1902-O",
+                "1902-S",
+                "1903",
+                "1903-O",
+                "1903-S",
+                "1904",
+                "1904-O",
+                "1904-S",
+                "1905",
+                "1905-O",
+                "1905-S",
+                "1906",
+                "1906-D",
+                "1906-O",
+                "1906-S",
+                "1907",
+                "1907-D",
+                "1907-O",
+                "1907-S",
+                "1908",
+                "1908-D",
+                "1908-O",
+                "1908-S",
+                "1909",
+                "1909-O",
+                "1909-S",
+                "1910",
+                "1910-S",
+                "1911",
+                "1911-D",
+                "1911-S",
+                "1912",
+                "1912-D",
+                "1912-S",
+                "1913",
+                "1913-D",
+                "1913-S",
+                "1914",
+                "1914-S",
+                "1915",
+                "1915-D",
+                "1915-S"
+              ]
+            },
+            {
+              "id": "walking-liberty",
+              "name": "Walking Liberty",
+              "dates": "1916–1947",
+              "diameter_mm": 30.6,
+              "description": "Adolph Weinman's Walking Liberty. In 1917 the mint mark moved from the obverse to the reverse.",
+              "slots": [
+                "1916",
+                "1916-D",
+                "1916-S",
+                "1917",
+                {
+                  "id": "1917-d-obverse-mint-mark",
+                  "label": "1917-D",
+                  "sub": "Obverse Mint Mark"
+                },
+                {
+                  "id": "1917-d-reverse-mint-mark",
+                  "label": "1917-D",
+                  "sub": "Reverse Mint Mark"
+                },
+                {
+                  "id": "1917-s-obverse-mint-mark",
+                  "label": "1917-S",
+                  "sub": "Obverse Mint Mark"
+                },
+                {
+                  "id": "1917-s-reverse-mint-mark",
+                  "label": "1917-S",
+                  "sub": "Reverse Mint Mark"
+                },
+                "1918",
+                "1918-D",
+                "1918-S",
+                "1919",
+                "1919-D",
+                "1919-S",
+                "1920",
+                "1920-D",
+                "1920-S",
+                "1921",
+                "1921-D",
+                "1921-S",
+                "1923-S",
+                "1927-S",
+                "1928-S",
+                "1929-D",
+                "1929-S",
+                "1933-S",
+                "1934",
+                "1934-D",
+                "1934-S",
+                "1935",
+                "1935-D",
+                "1935-S",
+                "1936",
+                "1936-D",
+                "1936-S",
+                "1937",
+                "1937-D",
+                "1937-S",
+                "1938",
+                "1938-D",
+                "1939",
+                "1939-D",
+                "1939-S",
+                "1940",
+                "1940-S",
+                "1941",
+                "1941-D",
+                "1941-S",
+                "1942",
+                "1942-D",
+                "1942-S",
+                "1943",
+                "1943-D",
+                "1943-S",
+                "1944",
+                "1944-D",
+                "1944-S",
+                "1945",
+                "1945-D",
+                "1945-S",
+                "1946",
+                "1946-D",
+                "1946-S",
+                "1947",
+                "1947-D"
+              ]
+            },
+            {
+              "id": "franklin",
+              "name": "Franklin",
+              "dates": "1948–1963",
+              "diameter_mm": 30.6,
+              "description": "John Sinnock's Benjamin Franklin with the Liberty Bell.",
+              "slots": [
+                "1948",
+                "1948-D",
+                "1949",
+                "1949-D",
+                "1949-S",
+                "1950",
+                "1950-D",
+                "1951",
+                "1951-D",
+                "1951-S",
+                "1952",
+                "1952-D",
+                "1952-S",
+                "1953",
+                "1953-D",
+                "1953-S",
+                "1954",
+                "1954-D",
+                "1954-S",
+                "1955",
+                "1956",
+                "1957",
+                "1957-D",
+                "1958",
+                "1958-D",
+                "1959",
+                "1959-D",
+                "1960",
+                "1960-D",
+                "1961",
+                "1961-D",
+                "1962",
+                "1962-D",
+                "1963",
+                "1963-D"
+              ]
+            },
+            {
+              "id": "kennedy",
+              "name": "Kennedy",
+              "dates": "1964–2025",
+              "diameter_mm": 30.6,
+              "description": "Gilroy Roberts's Kennedy. 90% silver in 1964, 40% silver 1965–1970, clad after. 1970-D was only in mint sets; 1976 shows Independence Hall.",
+              "slots": [
+                "1964",
+                "1964-D",
+                "1965",
+                "1966",
+                "1967",
+                "1968-D",
+                "1969-D",
+                "1970-D",
+                "1971",
+                "1971-D",
+                "1972",
+                "1972-D",
+                "1973",
+                "1973-D",
+                "1974",
+                "1974-D",
+                {
+                  "id": "1974-d-doubled-die-obverse",
+                  "label": "1974-D",
+                  "sub": "Doubled Die Obverse",
+                  "variety": true
+                },
+                {
+                  "id": "1976-bicentennial",
+                  "label": "1976",
+                  "sub": "Bicentennial"
+                },
+                {
+                  "id": "1976-d-bicentennial",
+                  "label": "1976-D",
+                  "sub": "Bicentennial"
+                },
+                "1977",
+                "1977-D",
+                "1978",
+                "1978-D",
+                "1979",
+                "1979-D",
+                "1980",
+                "1980-D",
+                "1981",
+                "1981-D",
+                "1982",
+                "1982-D",
+                "1983",
+                "1983-D",
+                "1984",
+                "1984-D",
+                "1985",
+                "1985-D",
+                "1986",
+                "1986-D",
+                "1987",
+                "1987-D",
+                "1988",
+                "1988-D",
+                "1989",
+                "1989-D",
+                "1990",
+                "1990-D",
+                "1991",
+                "1991-D",
+                "1992",
+                "1992-D",
+                "1993",
+                "1993-D",
+                "1994",
+                "1994-D",
+                "1995",
+                "1995-D",
+                "1996",
+                "1996-D",
+                "1997",
+                "1997-D",
+                "1998",
+                "1998-D",
+                "1999",
+                "1999-D",
+                "2000",
+                "2000-D",
+                "2001",
+                "2001-D",
+                "2002",
+                "2002-D",
+                "2003",
+                "2003-D",
+                "2004",
+                "2004-D",
+                "2005",
+                "2005-D",
+                "2006",
+                "2006-D",
+                "2007",
+                "2007-D",
+                "2008",
+                "2008-D",
+                "2009",
+                "2009-D",
+                "2010",
+                "2010-D",
+                "2011",
+                "2011-D",
+                "2012",
+                "2012-D",
+                "2013",
+                "2013-D",
+                "2014",
+                "2014-D",
+                "2015",
+                "2015-D",
+                "2016",
+                "2016-D",
+                "2017",
+                "2017-D",
+                "2018",
+                "2018-D",
+                "2019",
+                "2019-D",
+                "2020",
+                "2020-D",
+                "2021",
+                "2021-D",
+                "2022",
+                "2022-D",
+                "2023",
+                "2023-D",
+                "2024",
+                "2024-D",
+                "2025",
+                "2025-D"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "dollar",
+          "name": "Dollar",
+          "nickname": "Large",
+          "series": [
+            {
+              "id": "flowing-hair",
+              "name": "Flowing Hair",
+              "dates": "1794–1795",
+              "diameter_mm": 39.5,
+              "description": "The first US silver dollars. About 1,758 were struck in 1794.",
+              "slots": [
+                "1794",
+                "1795"
+              ]
+            },
+            {
+              "id": "draped-bust",
+              "name": "Draped Bust",
+              "dates": "1795–1803",
+              "diameter_mm": 39.5,
+              "description": "Small eagle reverse to 1798, heraldic eagle after. The famous 1804 dollar was struck later, as a proof.",
+              "slots": [
+                "1795",
+                "1796",
+                "1797",
+                {
+                  "id": "1798-small-eagle",
+                  "label": "1798",
+                  "sub": "Small Eagle"
+                },
+                {
+                  "id": "1798-heraldic-eagle",
+                  "label": "1798",
+                  "sub": "Heraldic Eagle"
+                },
+                "1799",
+                "1800",
+                "1801",
+                "1802",
+                "1803"
+              ]
+            },
+            {
+              "id": "seated-liberty",
+              "name": "Seated Liberty",
+              "dates": "1840–1873",
+              "diameter_mm": 38.1,
+              "description": "Gobrecht's Seated Liberty with a heraldic eagle; IN GOD WE TRUST added in 1866. 1858 was struck only as a proof.",
+              "slots": [
+                "1840",
+                "1841",
+                "1842",
+                "1843",
+                "1844",
+                "1845",
+                "1846",
+                "1846-O",
+                "1847",
+                "1848",
+                "1849",
+                "1850",
+                "1850-O",
+                "1851",
+                "1852",
+                "1853",
+                "1854",
+                "1855",
+                "1856",
+                "1857",
+                "1859",
+                "1859-O",
+                "1859-S",
+                "1860",
+                "1860-O",
+                "1861",
+                "1862",
+                "1863",
+                "1864",
+                "1865",
+                "1866",
+                "1867",
+                "1868",
+                "1869",
+                "1870",
+                "1870-CC",
+                "1871",
+                "1871-CC",
+                "1872",
+                "1872-CC",
+                "1872-S",
+                "1873",
+                "1873-CC"
+              ]
+            },
+            {
+              "id": "trade",
+              "name": "Trade Dollar",
+              "dates": "1873–1878",
+              "diameter_mm": 38.1,
+              "description": "Heavier than a regular dollar, made for trade in China. Most later carry Chinese merchants' chop marks.",
+              "slots": [
+                "1873",
+                "1873-CC",
+                "1873-S",
+                "1874",
+                "1874-CC",
+                "1874-S",
+                "1875",
+                "1875-CC",
+                "1875-S",
+                "1876",
+                "1876-CC",
+                "1876-S",
+                "1877",
+                "1877-CC",
+                "1877-S",
+                "1878-CC",
+                "1878-S"
+              ]
+            },
+            {
+              "id": "morgan",
+              "name": "Morgan",
+              "dates": "1878–1921",
+              "diameter_mm": 38.1,
+              "description": "George T. Morgan's Liberty Head. Carson City (CC) coins and the 1893-S and 1895 are the famous keys. 1895 Philadelphia is known only as a proof.",
+              "slots": [
+                {
+                  "id": "1878-8-tail-feathers",
+                  "label": "1878",
+                  "sub": "8 Tail Feathers"
+                },
+                {
+                  "id": "1878-7-tail-feathers",
+                  "label": "1878",
+                  "sub": "7 Tail Feathers"
+                },
+                {
+                  "id": "1878-7-over-8-tail-feathers",
+                  "label": "1878",
+                  "sub": "7 over 8 Tail Feathers",
+                  "variety": true
+                },
+                "1878-CC",
+                "1878-S",
+                "1879",
+                "1879-CC",
+                "1879-O",
+                "1879-S",
+                "1880",
+                "1880-CC",
+                "1880-O",
+                "1880-S",
+                "1881",
+                "1881-CC",
+                "1881-O",
+                "1881-S",
+                "1882",
+                "1882-CC",
+                "1882-O",
+                "1882-S",
+                "1883",
+                "1883-CC",
+                "1883-O",
+                "1883-S",
+                "1884",
+                "1884-CC",
+                "1884-O",
+                "1884-S",
+                "1885",
+                "1885-CC",
+                "1885-O",
+                "1885-S",
+                "1886",
+                "1886-O",
+                "1886-S",
+                "1887",
+                "1887-O",
+                "1887-S",
+                "1888",
+                "1888-O",
+                "1888-S",
+                "1889",
+                "1889-CC",
+                "1889-O",
+                "1889-S",
+                "1890",
+                "1890-CC",
+                "1890-O",
+                "1890-S",
+                "1891",
+                "1891-CC",
+                "1891-O",
+                "1891-S",
+                "1892",
+                "1892-CC",
+                "1892-O",
+                "1892-S",
+                "1893",
+                "1893-CC",
+                "1893-O",
+                "1893-S",
+                "1894",
+                "1894-O",
+                "1894-S",
+                {
+                  "id": "1895-proof-only",
+                  "label": "1895",
+                  "sub": "Proof Only"
+                },
+                "1895-O",
+                "1895-S",
+                "1896",
+                "1896-O",
+                "1896-S",
+                "1897",
+                "1897-O",
+                "1897-S",
+                "1898",
+                "1898-O",
+                "1898-S",
+                "1899",
+                "1899-O",
+                "1899-S",
+                "1900",
+                "1900-O",
+                "1900-S",
+                "1901",
+                "1901-O",
+                "1901-S",
+                "1902",
+                "1902-O",
+                "1902-S",
+                "1903",
+                "1903-O",
+                "1903-S",
+                "1904",
+                "1904-O",
+                "1904-S",
+                "1921",
+                "1921-D",
+                "1921-S"
+              ]
+            },
+            {
+              "id": "peace",
+              "name": "Peace",
+              "dates": "1921–1935",
+              "diameter_mm": 38.1,
+              "description": "Anthony de Francisci's Peace dollar. The 1921 is in high relief.",
+              "slots": [
+                "1921",
+                "1922",
+                "1922-D",
+                "1922-S",
+                "1923",
+                "1923-D",
+                "1923-S",
+                "1924",
+                "1924-S",
+                "1925",
+                "1925-S",
+                "1926",
+                "1926-D",
+                "1926-S",
+                "1927",
+                "1927-D",
+                "1927-S",
+                "1928",
+                "1928-S",
+                "1934",
+                "1934-D",
+                "1934-S",
+                "1935",
+                "1935-S"
+              ]
+            },
+            {
+              "id": "eisenhower",
+              "name": "Eisenhower",
+              "dates": "1971–1978",
+              "diameter_mm": 38.1,
+              "description": "Frank Gasparro's Eisenhower. The 1976 coins show the Liberty Bell and Moon with two lettering types.",
+              "slots": [
+                "1971",
+                "1971-D",
+                "1972",
+                "1972-D",
+                "1973",
+                "1973-D",
+                "1974",
+                "1974-D",
+                {
+                  "id": "1976-type-1",
+                  "label": "1976",
+                  "sub": "Type 1"
+                },
+                {
+                  "id": "1976-type-2",
+                  "label": "1976",
+                  "sub": "Type 2"
+                },
+                {
+                  "id": "1976-d-type-1",
+                  "label": "1976-D",
+                  "sub": "Type 1"
+                },
+                {
+                  "id": "1976-d-type-2",
+                  "label": "1976-D",
+                  "sub": "Type 2"
+                },
+                "1977",
+                "1977-D",
+                "1978",
+                "1978-D"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "small-dollar",
+          "name": "Dollar",
+          "nickname": "Small",
+          "series": [
+            {
+              "id": "susan-b-anthony",
+              "name": "Susan B. Anthony",
+              "dates": "1979–1999",
+              "diameter_mm": 26.5,
+              "description": "The first small-size dollar. 1981 coins were only in mint sets; 1999 was struck when Sacagawea dollars were delayed.",
+              "slots": [
+                "1979",
+                "1979-D",
+                "1979-S",
+                {
+                  "id": "1979-p-wide-rim",
+                  "label": "1979-P",
+                  "sub": "Wide Rim",
+                  "variety": true
+                },
+                "1980",
+                "1980-D",
+                "1980-S",
+                "1981",
+                "1981-D",
+                "1981-S",
+                "1999",
+                "1999-D"
+              ]
+            },
+            {
+              "id": "sacagawea",
+              "name": "Sacagawea",
+              "dates": "2000–2008",
+              "diameter_mm": 26.5,
+              "description": "Glenna Goodacre's Sacagawea and her son, on a golden manganese-brass coin.",
+              "slots": [
+                "2000",
+                "2000-D",
+                "2001",
+                "2001-D",
+                "2002",
+                "2002-D",
+                "2003",
+                "2003-D",
+                "2004",
+                "2004-D",
+                "2005",
+                "2005-D",
+                "2006",
+                "2006-D",
+                "2007",
+                "2007-D",
+                "2008",
+                "2008-D"
+              ]
+            },
+            {
+              "id": "native-american",
+              "name": "Native American",
+              "dates": "2009–2025",
+              "diameter_mm": 26.5,
+              "description": "The Sacagawea obverse with a new reverse each year honoring Native American contributions.",
+              "slots": [
+                "2009",
+                "2009-D",
+                "2010",
+                "2010-D",
+                "2011",
+                "2011-D",
+                "2012",
+                "2012-D",
+                "2013",
+                "2013-D",
+                "2014",
+                "2014-D",
+                "2015",
+                "2015-D",
+                "2016",
+                "2016-D",
+                "2017",
+                "2017-D",
+                "2018",
+                "2018-D",
+                "2019",
+                "2019-D",
+                "2020",
+                "2020-D",
+                "2021",
+                "2021-D",
+                "2022",
+                "2022-D",
+                "2023",
+                "2023-D",
+                "2024",
+                "2024-D",
+                "2025",
+                "2025-D"
+              ]
+            },
+            {
+              "id": "presidential",
+              "name": "Presidential",
+              "dates": "2007–2020",
+              "diameter_mm": 26.5,
+              "description": "Four presidents a year in the order they served, with the date and motto on the edge.",
+              "slots": [
+                {
+                  "id": "2007-george-washington",
+                  "label": "2007",
+                  "sub": "George Washington"
+                },
+                {
+                  "id": "2007-d-george-washington",
+                  "label": "2007-D",
+                  "sub": "George Washington"
+                },
+                {
+                  "id": "2007-john-adams",
+                  "label": "2007",
+                  "sub": "John Adams"
+                },
+                {
+                  "id": "2007-d-john-adams",
+                  "label": "2007-D",
+                  "sub": "John Adams"
+                },
+                {
+                  "id": "2007-thomas-jefferson",
+                  "label": "2007",
+                  "sub": "Thomas Jefferson"
+                },
+                {
+                  "id": "2007-d-thomas-jefferson",
+                  "label": "2007-D",
+                  "sub": "Thomas Jefferson"
+                },
+                {
+                  "id": "2007-james-madison",
+                  "label": "2007",
+                  "sub": "James Madison"
+                },
+                {
+                  "id": "2007-d-james-madison",
+                  "label": "2007-D",
+                  "sub": "James Madison"
+                },
+                {
+                  "id": "2008-james-monroe",
+                  "label": "2008",
+                  "sub": "James Monroe"
+                },
+                {
+                  "id": "2008-d-james-monroe",
+                  "label": "2008-D",
+                  "sub": "James Monroe"
+                },
+                {
+                  "id": "2008-john-quincy-adams",
+                  "label": "2008",
+                  "sub": "John Quincy Adams"
+                },
+                {
+                  "id": "2008-d-john-quincy-adams",
+                  "label": "2008-D",
+                  "sub": "John Quincy Adams"
+                },
+                {
+                  "id": "2008-andrew-jackson",
+                  "label": "2008",
+                  "sub": "Andrew Jackson"
+                },
+                {
+                  "id": "2008-d-andrew-jackson",
+                  "label": "2008-D",
+                  "sub": "Andrew Jackson"
+                },
+                {
+                  "id": "2008-martin-van-buren",
+                  "label": "2008",
+                  "sub": "Martin Van Buren"
+                },
+                {
+                  "id": "2008-d-martin-van-buren",
+                  "label": "2008-D",
+                  "sub": "Martin Van Buren"
+                },
+                {
+                  "id": "2009-william-henry-harrison",
+                  "label": "2009",
+                  "sub": "William Henry Harrison"
+                },
+                {
+                  "id": "2009-d-william-henry-harrison",
+                  "label": "2009-D",
+                  "sub": "William Henry Harrison"
+                },
+                {
+                  "id": "2009-john-tyler",
+                  "label": "2009",
+                  "sub": "John Tyler"
+                },
+                {
+                  "id": "2009-d-john-tyler",
+                  "label": "2009-D",
+                  "sub": "John Tyler"
+                },
+                {
+                  "id": "2009-james-k-polk",
+                  "label": "2009",
+                  "sub": "James K. Polk"
+                },
+                {
+                  "id": "2009-d-james-k-polk",
+                  "label": "2009-D",
+                  "sub": "James K. Polk"
+                },
+                {
+                  "id": "2009-zachary-taylor",
+                  "label": "2009",
+                  "sub": "Zachary Taylor"
+                },
+                {
+                  "id": "2009-d-zachary-taylor",
+                  "label": "2009-D",
+                  "sub": "Zachary Taylor"
+                },
+                {
+                  "id": "2010-millard-fillmore",
+                  "label": "2010",
+                  "sub": "Millard Fillmore"
+                },
+                {
+                  "id": "2010-d-millard-fillmore",
+                  "label": "2010-D",
+                  "sub": "Millard Fillmore"
+                },
+                {
+                  "id": "2010-franklin-pierce",
+                  "label": "2010",
+                  "sub": "Franklin Pierce"
+                },
+                {
+                  "id": "2010-d-franklin-pierce",
+                  "label": "2010-D",
+                  "sub": "Franklin Pierce"
+                },
+                {
+                  "id": "2010-james-buchanan",
+                  "label": "2010",
+                  "sub": "James Buchanan"
+                },
+                {
+                  "id": "2010-d-james-buchanan",
+                  "label": "2010-D",
+                  "sub": "James Buchanan"
+                },
+                {
+                  "id": "2010-abraham-lincoln",
+                  "label": "2010",
+                  "sub": "Abraham Lincoln"
+                },
+                {
+                  "id": "2010-d-abraham-lincoln",
+                  "label": "2010-D",
+                  "sub": "Abraham Lincoln"
+                },
+                {
+                  "id": "2011-andrew-johnson",
+                  "label": "2011",
+                  "sub": "Andrew Johnson"
+                },
+                {
+                  "id": "2011-d-andrew-johnson",
+                  "label": "2011-D",
+                  "sub": "Andrew Johnson"
+                },
+                {
+                  "id": "2011-ulysses-s-grant",
+                  "label": "2011",
+                  "sub": "Ulysses S. Grant"
+                },
+                {
+                  "id": "2011-d-ulysses-s-grant",
+                  "label": "2011-D",
+                  "sub": "Ulysses S. Grant"
+                },
+                {
+                  "id": "2011-rutherford-b-hayes",
+                  "label": "2011",
+                  "sub": "Rutherford B. Hayes"
+                },
+                {
+                  "id": "2011-d-rutherford-b-hayes",
+                  "label": "2011-D",
+                  "sub": "Rutherford B. Hayes"
+                },
+                {
+                  "id": "2011-james-garfield",
+                  "label": "2011",
+                  "sub": "James Garfield"
+                },
+                {
+                  "id": "2011-d-james-garfield",
+                  "label": "2011-D",
+                  "sub": "James Garfield"
+                },
+                {
+                  "id": "2012-chester-arthur",
+                  "label": "2012",
+                  "sub": "Chester Arthur"
+                },
+                {
+                  "id": "2012-d-chester-arthur",
+                  "label": "2012-D",
+                  "sub": "Chester Arthur"
+                },
+                {
+                  "id": "2012-grover-cleveland-first-term",
+                  "label": "2012",
+                  "sub": "Grover Cleveland (first term)"
+                },
+                {
+                  "id": "2012-d-grover-cleveland-first-term",
+                  "label": "2012-D",
+                  "sub": "Grover Cleveland (first term)"
+                },
+                {
+                  "id": "2012-benjamin-harrison",
+                  "label": "2012",
+                  "sub": "Benjamin Harrison"
+                },
+                {
+                  "id": "2012-d-benjamin-harrison",
+                  "label": "2012-D",
+                  "sub": "Benjamin Harrison"
+                },
+                {
+                  "id": "2012-grover-cleveland-second-term",
+                  "label": "2012",
+                  "sub": "Grover Cleveland (second term)"
+                },
+                {
+                  "id": "2012-d-grover-cleveland-second-term",
+                  "label": "2012-D",
+                  "sub": "Grover Cleveland (second term)"
+                },
+                {
+                  "id": "2013-william-mckinley",
+                  "label": "2013",
+                  "sub": "William McKinley"
+                },
+                {
+                  "id": "2013-d-william-mckinley",
+                  "label": "2013-D",
+                  "sub": "William McKinley"
+                },
+                {
+                  "id": "2013-theodore-roosevelt",
+                  "label": "2013",
+                  "sub": "Theodore Roosevelt"
+                },
+                {
+                  "id": "2013-d-theodore-roosevelt",
+                  "label": "2013-D",
+                  "sub": "Theodore Roosevelt"
+                },
+                {
+                  "id": "2013-william-howard-taft",
+                  "label": "2013",
+                  "sub": "William Howard Taft"
+                },
+                {
+                  "id": "2013-d-william-howard-taft",
+                  "label": "2013-D",
+                  "sub": "William Howard Taft"
+                },
+                {
+                  "id": "2013-woodrow-wilson",
+                  "label": "2013",
+                  "sub": "Woodrow Wilson"
+                },
+                {
+                  "id": "2013-d-woodrow-wilson",
+                  "label": "2013-D",
+                  "sub": "Woodrow Wilson"
+                },
+                {
+                  "id": "2014-warren-harding",
+                  "label": "2014",
+                  "sub": "Warren Harding"
+                },
+                {
+                  "id": "2014-d-warren-harding",
+                  "label": "2014-D",
+                  "sub": "Warren Harding"
+                },
+                {
+                  "id": "2014-calvin-coolidge",
+                  "label": "2014",
+                  "sub": "Calvin Coolidge"
+                },
+                {
+                  "id": "2014-d-calvin-coolidge",
+                  "label": "2014-D",
+                  "sub": "Calvin Coolidge"
+                },
+                {
+                  "id": "2014-herbert-hoover",
+                  "label": "2014",
+                  "sub": "Herbert Hoover"
+                },
+                {
+                  "id": "2014-d-herbert-hoover",
+                  "label": "2014-D",
+                  "sub": "Herbert Hoover"
+                },
+                {
+                  "id": "2014-franklin-d-roosevelt",
+                  "label": "2014",
+                  "sub": "Franklin D. Roosevelt"
+                },
+                {
+                  "id": "2014-d-franklin-d-roosevelt",
+                  "label": "2014-D",
+                  "sub": "Franklin D. Roosevelt"
+                },
+                {
+                  "id": "2015-harry-truman",
+                  "label": "2015",
+                  "sub": "Harry Truman"
+                },
+                {
+                  "id": "2015-d-harry-truman",
+                  "label": "2015-D",
+                  "sub": "Harry Truman"
+                },
+                {
+                  "id": "2015-dwight-d-eisenhower",
+                  "label": "2015",
+                  "sub": "Dwight D. Eisenhower"
+                },
+                {
+                  "id": "2015-d-dwight-d-eisenhower",
+                  "label": "2015-D",
+                  "sub": "Dwight D. Eisenhower"
+                },
+                {
+                  "id": "2015-john-f-kennedy",
+                  "label": "2015",
+                  "sub": "John F. Kennedy"
+                },
+                {
+                  "id": "2015-d-john-f-kennedy",
+                  "label": "2015-D",
+                  "sub": "John F. Kennedy"
+                },
+                {
+                  "id": "2015-lyndon-b-johnson",
+                  "label": "2015",
+                  "sub": "Lyndon B. Johnson"
+                },
+                {
+                  "id": "2015-d-lyndon-b-johnson",
+                  "label": "2015-D",
+                  "sub": "Lyndon B. Johnson"
+                },
+                {
+                  "id": "2016-richard-nixon",
+                  "label": "2016",
+                  "sub": "Richard Nixon"
+                },
+                {
+                  "id": "2016-d-richard-nixon",
+                  "label": "2016-D",
+                  "sub": "Richard Nixon"
+                },
+                {
+                  "id": "2016-gerald-ford",
+                  "label": "2016",
+                  "sub": "Gerald Ford"
+                },
+                {
+                  "id": "2016-d-gerald-ford",
+                  "label": "2016-D",
+                  "sub": "Gerald Ford"
+                },
+                {
+                  "id": "2016-ronald-reagan",
+                  "label": "2016",
+                  "sub": "Ronald Reagan"
+                },
+                {
+                  "id": "2016-d-ronald-reagan",
+                  "label": "2016-D",
+                  "sub": "Ronald Reagan"
+                },
+                {
+                  "id": "2020-george-h-w-bush",
+                  "label": "2020",
+                  "sub": "George H. W. Bush"
+                },
+                {
+                  "id": "2020-d-george-h-w-bush",
+                  "label": "2020-D",
+                  "sub": "George H. W. Bush"
+                }
+              ]
+            },
+            {
+              "id": "american-innovation",
+              "name": "American Innovation",
+              "dates": "2018–2025",
+              "diameter_mm": 26.5,
+              "description": "One innovation from each state, in the order they joined the Union.",
+              "slots": [
+                {
+                  "id": "2018-introductory",
+                  "label": "2018",
+                  "sub": "Introductory"
+                },
+                {
+                  "id": "2018-d-introductory",
+                  "label": "2018-D",
+                  "sub": "Introductory"
+                },
+                {
+                  "id": "2019-delaware",
+                  "label": "2019",
+                  "sub": "Delaware"
+                },
+                {
+                  "id": "2019-d-delaware",
+                  "label": "2019-D",
+                  "sub": "Delaware"
+                },
+                {
+                  "id": "2019-pennsylvania",
+                  "label": "2019",
+                  "sub": "Pennsylvania"
+                },
+                {
+                  "id": "2019-d-pennsylvania",
+                  "label": "2019-D",
+                  "sub": "Pennsylvania"
+                },
+                {
+                  "id": "2019-new-jersey",
+                  "label": "2019",
+                  "sub": "New Jersey"
+                },
+                {
+                  "id": "2019-d-new-jersey",
+                  "label": "2019-D",
+                  "sub": "New Jersey"
+                },
+                {
+                  "id": "2019-georgia",
+                  "label": "2019",
+                  "sub": "Georgia"
+                },
+                {
+                  "id": "2019-d-georgia",
+                  "label": "2019-D",
+                  "sub": "Georgia"
+                },
+                {
+                  "id": "2020-connecticut",
+                  "label": "2020",
+                  "sub": "Connecticut"
+                },
+                {
+                  "id": "2020-d-connecticut",
+                  "label": "2020-D",
+                  "sub": "Connecticut"
+                },
+                {
+                  "id": "2020-massachusetts",
+                  "label": "2020",
+                  "sub": "Massachusetts"
+                },
+                {
+                  "id": "2020-d-massachusetts",
+                  "label": "2020-D",
+                  "sub": "Massachusetts"
+                },
+                {
+                  "id": "2020-maryland",
+                  "label": "2020",
+                  "sub": "Maryland"
+                },
+                {
+                  "id": "2020-d-maryland",
+                  "label": "2020-D",
+                  "sub": "Maryland"
+                },
+                {
+                  "id": "2020-south-carolina",
+                  "label": "2020",
+                  "sub": "South Carolina"
+                },
+                {
+                  "id": "2020-d-south-carolina",
+                  "label": "2020-D",
+                  "sub": "South Carolina"
+                },
+                {
+                  "id": "2021-new-hampshire",
+                  "label": "2021",
+                  "sub": "New Hampshire"
+                },
+                {
+                  "id": "2021-d-new-hampshire",
+                  "label": "2021-D",
+                  "sub": "New Hampshire"
+                },
+                {
+                  "id": "2021-virginia",
+                  "label": "2021",
+                  "sub": "Virginia"
+                },
+                {
+                  "id": "2021-d-virginia",
+                  "label": "2021-D",
+                  "sub": "Virginia"
+                },
+                {
+                  "id": "2021-new-york",
+                  "label": "2021",
+                  "sub": "New York"
+                },
+                {
+                  "id": "2021-d-new-york",
+                  "label": "2021-D",
+                  "sub": "New York"
+                },
+                {
+                  "id": "2021-north-carolina",
+                  "label": "2021",
+                  "sub": "North Carolina"
+                },
+                {
+                  "id": "2021-d-north-carolina",
+                  "label": "2021-D",
+                  "sub": "North Carolina"
+                },
+                {
+                  "id": "2022-rhode-island",
+                  "label": "2022",
+                  "sub": "Rhode Island"
+                },
+                {
+                  "id": "2022-d-rhode-island",
+                  "label": "2022-D",
+                  "sub": "Rhode Island"
+                },
+                {
+                  "id": "2022-vermont",
+                  "label": "2022",
+                  "sub": "Vermont"
+                },
+                {
+                  "id": "2022-d-vermont",
+                  "label": "2022-D",
+                  "sub": "Vermont"
+                },
+                {
+                  "id": "2022-kentucky",
+                  "label": "2022",
+                  "sub": "Kentucky"
+                },
+                {
+                  "id": "2022-d-kentucky",
+                  "label": "2022-D",
+                  "sub": "Kentucky"
+                },
+                {
+                  "id": "2022-tennessee",
+                  "label": "2022",
+                  "sub": "Tennessee"
+                },
+                {
+                  "id": "2022-d-tennessee",
+                  "label": "2022-D",
+                  "sub": "Tennessee"
+                },
+                {
+                  "id": "2023-ohio",
+                  "label": "2023",
+                  "sub": "Ohio"
+                },
+                {
+                  "id": "2023-d-ohio",
+                  "label": "2023-D",
+                  "sub": "Ohio"
+                },
+                {
+                  "id": "2023-louisiana",
+                  "label": "2023",
+                  "sub": "Louisiana"
+                },
+                {
+                  "id": "2023-d-louisiana",
+                  "label": "2023-D",
+                  "sub": "Louisiana"
+                },
+                {
+                  "id": "2023-indiana",
+                  "label": "2023",
+                  "sub": "Indiana"
+                },
+                {
+                  "id": "2023-d-indiana",
+                  "label": "2023-D",
+                  "sub": "Indiana"
+                },
+                {
+                  "id": "2023-mississippi",
+                  "label": "2023",
+                  "sub": "Mississippi"
+                },
+                {
+                  "id": "2023-d-mississippi",
+                  "label": "2023-D",
+                  "sub": "Mississippi"
+                },
+                {
+                  "id": "2024-illinois",
+                  "label": "2024",
+                  "sub": "Illinois"
+                },
+                {
+                  "id": "2024-d-illinois",
+                  "label": "2024-D",
+                  "sub": "Illinois"
+                },
+                {
+                  "id": "2024-alabama",
+                  "label": "2024",
+                  "sub": "Alabama"
+                },
+                {
+                  "id": "2024-d-alabama",
+                  "label": "2024-D",
+                  "sub": "Alabama"
+                },
+                {
+                  "id": "2024-maine",
+                  "label": "2024",
+                  "sub": "Maine"
+                },
+                {
+                  "id": "2024-d-maine",
+                  "label": "2024-D",
+                  "sub": "Maine"
+                },
+                {
+                  "id": "2024-missouri",
+                  "label": "2024",
+                  "sub": "Missouri"
+                },
+                {
+                  "id": "2024-d-missouri",
+                  "label": "2024-D",
+                  "sub": "Missouri"
+                },
+                {
+                  "id": "2025-arkansas",
+                  "label": "2025",
+                  "sub": "Arkansas"
+                },
+                {
+                  "id": "2025-d-arkansas",
+                  "label": "2025-D",
+                  "sub": "Arkansas"
+                },
+                {
+                  "id": "2025-michigan",
+                  "label": "2025",
+                  "sub": "Michigan"
+                },
+                {
+                  "id": "2025-d-michigan",
+                  "label": "2025-D",
+                  "sub": "Michigan"
+                },
+                {
+                  "id": "2025-florida",
+                  "label": "2025",
+                  "sub": "Florida"
+                },
+                {
+                  "id": "2025-d-florida",
+                  "label": "2025-D",
+                  "sub": "Florida"
+                },
+                {
+                  "id": "2025-texas",
+                  "label": "2025",
+                  "sub": "Texas"
+                },
+                {
+                  "id": "2025-d-texas",
+                  "label": "2025-D",
+                  "sub": "Texas"
                 }
               ]
             }
