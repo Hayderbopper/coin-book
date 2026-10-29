@@ -2,54 +2,6 @@
   "version": 1,
   "imageBase": "",
   "coins": {
-    "us/cent/wheat/1909": {
-      "sides": {
-        "obverse": {
-          "image": "images/us/cent/wheat/1909/obverse.png",
-          "thumb": "images/us/cent/wheat/1909/obverse-thumb.webp",
-          "width": 993,
-          "height": 1000
-        },
-        "reverse": {
-          "image": "images/us/cent/wheat/1909/reverse.png",
-          "thumb": "images/us/cent/wheat/1909/reverse-thumb.webp",
-          "width": 1000,
-          "height": 1000
-        }
-      },
-      "added": "2026-10-29",
-      "updated": "2026-10-29",
-      "sample": true,
-      "grade": "VF-20",
-      "notes": "Placeholder from the scanner trials so the zoom viewer has something to show."
-    },
-    "us/cent/wheat/1909-s": {
-      "sides": {
-        "obverse": {
-          "image": "images/us/cent/wheat/1909-s/obverse.png",
-          "thumb": "images/us/cent/wheat/1909-s/obverse-thumb.webp",
-          "width": 965,
-          "height": 1000
-        }
-      },
-      "added": "2026-10-29",
-      "updated": "2026-10-29",
-      "sample": true
-    },
-    "us/cent/wheat/1922-no-d": {
-      "sides": {
-        "obverse": {
-          "image": "images/us/cent/wheat/1922-no-d/obverse.png",
-          "thumb": "images/us/cent/wheat/1922-no-d/obverse-thumb.webp",
-          "width": 993,
-          "height": 1000,
-          "tiles": "images/us/cent/wheat/1922-no-d/obverse.dzi"
-        }
-      },
-      "added": "2026-10-29",
-      "updated": "2026-10-29",
-      "sample": true
-    },
     "canada/cent/elizabeth-ii-round/1978": {
       "sides": {
         "reverse": {

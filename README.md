@@ -54,10 +54,6 @@ python tools\add_coin.py remove us/cent/wheat/1909 empty a slot
 The script copies the full image, makes a small thumbnail, makes zoom tiles for
 anything over 3000 px, and updates `data/collection.json`. Then publish (below).
 
-The three filled Wheat slots that ship with the site (1909, 1909-S, 1922 No D) are
-test images from the scanner trials, labelled "Test image". Remove them with
-`add_coin.py remove` or by adding real scans to those slots.
-
 ## Add a new series or country
 
 Edit `data/catalog.json`. A whole run of dates is one line:
