@@ -18,16 +18,67 @@
               "diameter_mm": 19.05,
               "description": "Victor David Brenner's Lincoln portrait with two wheat ears on the reverse. 1943 cents are zinc-coated steel.",
               "slots": [
-                "1909", "1909 VDB", "1909-S", "1909-S VDB",
-                "1910", "1910-S",
-                { "range": [1911, 1920], "mints": ["", "D", "S"] },
-                "1921", "1921-S",
-                "1922-D", { "id": "1922-no-d", "label": "1922", "sub": "No D" },
-                "1923", "1923-S",
-                { "range": [1924, 1931], "mints": ["", "D", "S"] },
-                "1932", "1932-D", "1933", "1933-D", "1934", "1934-D",
-                { "range": [1935, 1955], "mints": ["", "D", "S"] },
-                "1956", "1956-D", "1957", "1957-D", "1958", "1958-D"
+                "1909",
+                "1909 VDB",
+                "1909-S",
+                "1909-S VDB",
+                "1910",
+                "1910-S",
+                {
+                  "range": [
+                    1911,
+                    1920
+                  ],
+                  "mints": [
+                    "",
+                    "D",
+                    "S"
+                  ]
+                },
+                "1921",
+                "1921-S",
+                "1922-D",
+                {
+                  "id": "1922-no-d",
+                  "label": "1922",
+                  "sub": "No D"
+                },
+                "1923",
+                "1923-S",
+                {
+                  "range": [
+                    1924,
+                    1931
+                  ],
+                  "mints": [
+                    "",
+                    "D",
+                    "S"
+                  ]
+                },
+                "1932",
+                "1932-D",
+                "1933",
+                "1933-D",
+                "1934",
+                "1934-D",
+                {
+                  "range": [
+                    1935,
+                    1955
+                  ],
+                  "mints": [
+                    "",
+                    "D",
+                    "S"
+                  ]
+                },
+                "1956",
+                "1956-D",
+                "1957",
+                "1957-D",
+                "1958",
+                "1958-D"
               ]
             },
             {
@@ -37,10 +88,40 @@
               "diameter_mm": 19.05,
               "description": "Frank Gasparro's Lincoln Memorial reverse. Copper until mid-1982, copper-plated zinc after. 1965–1967 coins carry no mint mark.",
               "slots": [
-                { "range": [1959, 1964], "mints": ["", "D"] },
-                "1965", "1966", "1967",
-                { "range": [1968, 1974], "mints": ["", "D", "S"] },
-                { "range": [1975, 2008], "mints": ["", "D"] }
+                {
+                  "range": [
+                    1959,
+                    1964
+                  ],
+                  "mints": [
+                    "",
+                    "D"
+                  ]
+                },
+                "1965",
+                "1966",
+                "1967",
+                {
+                  "range": [
+                    1968,
+                    1974
+                  ],
+                  "mints": [
+                    "",
+                    "D",
+                    "S"
+                  ]
+                },
+                {
+                  "range": [
+                    1975,
+                    2008
+                  ],
+                  "mints": [
+                    "",
+                    "D"
+                  ]
+                }
               ]
             },
             {
@@ -50,14 +131,46 @@
               "diameter_mm": 19.05,
               "description": "Four reverses for the 200th anniversary of Lincoln's birth, one for each stage of his life.",
               "slots": [
-                { "id": "2009-birthplace", "label": "2009", "sub": "Birthplace" },
-                { "id": "2009-d-birthplace", "label": "2009-D", "sub": "Birthplace" },
-                { "id": "2009-formative", "label": "2009", "sub": "Formative Years" },
-                { "id": "2009-d-formative", "label": "2009-D", "sub": "Formative Years" },
-                { "id": "2009-professional", "label": "2009", "sub": "Professional Life" },
-                { "id": "2009-d-professional", "label": "2009-D", "sub": "Professional Life" },
-                { "id": "2009-presidency", "label": "2009", "sub": "Presidency" },
-                { "id": "2009-d-presidency", "label": "2009-D", "sub": "Presidency" }
+                {
+                  "id": "2009-birthplace",
+                  "label": "2009",
+                  "sub": "Birthplace"
+                },
+                {
+                  "id": "2009-d-birthplace",
+                  "label": "2009-D",
+                  "sub": "Birthplace"
+                },
+                {
+                  "id": "2009-formative",
+                  "label": "2009",
+                  "sub": "Formative Years"
+                },
+                {
+                  "id": "2009-d-formative",
+                  "label": "2009-D",
+                  "sub": "Formative Years"
+                },
+                {
+                  "id": "2009-professional",
+                  "label": "2009",
+                  "sub": "Professional Life"
+                },
+                {
+                  "id": "2009-d-professional",
+                  "label": "2009-D",
+                  "sub": "Professional Life"
+                },
+                {
+                  "id": "2009-presidency",
+                  "label": "2009",
+                  "sub": "Presidency"
+                },
+                {
+                  "id": "2009-d-presidency",
+                  "label": "2009-D",
+                  "sub": "Presidency"
+                }
               ]
             },
             {
@@ -67,7 +180,160 @@
               "diameter_mm": 19.05,
               "description": "Union shield reverse by Lyndall Bass. Circulation strikes ended in November 2025.",
               "slots": [
-                { "range": [2010, 2025], "mints": ["", "D"] }
+                {
+                  "range": [
+                    2010,
+                    2025
+                  ],
+                  "mints": [
+                    "",
+                    "D"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "canada",
+      "name": "Canada",
+      "denominations": [
+        {
+          "id": "cent",
+          "name": "Cent",
+          "nickname": "Penny",
+          "series": [
+            {
+              "id": "elizabeth-ii-round",
+              "name": "Maple Twig, Elizabeth II",
+              "dates": "1953–1981",
+              "diameter_mm": 19.05,
+              "description": "G.E. Kruger Gray's maple twig reverse (his KG initials sit beside it). Round bronze cents from the start of Elizabeth II's reign until the 12-sided cent of 1982. 1967 swapped the twig for Alex Colville's centennial rock dove.",
+              "slots": [
+                {
+                  "range": [
+                    1953,
+                    1966
+                  ]
+                },
+                {
+                  "id": "1967",
+                  "label": "1967",
+                  "sub": "Centennial dove"
+                },
+                {
+                  "range": [
+                    1968,
+                    1981
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bulgaria",
+      "name": "Bulgaria",
+      "denominations": [
+        {
+          "id": "1-stotinka",
+          "name": "1 Stotinka",
+          "series": [
+            {
+              "id": "madara-rider",
+              "name": "Madara Rider",
+              "dates": "1999–2002",
+              "diameter_mm": 16,
+              "description": "The Madara Rider, an 8th-century rock relief of a horseman spearing a lion, on the coins of the redenominated lev. The date is on the value side.",
+              "slots": [
+                "1999",
+                "2000",
+                "2002"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "japan",
+      "name": "Japan",
+      "denominations": [
+        {
+          "id": "2-sen",
+          "name": "2 Sen",
+          "series": [
+            {
+              "id": "dragon",
+              "name": "Meiji Dragon",
+              "dates": "1873–1884",
+              "diameter_mm": 31.8,
+              "description": "Copper 2 sen with a coiled dragon inside a beaded ring. The date is written in Meiji era years around the rim, read from 大日本 on the left over the top: Meiji 14 is 明治十四年.",
+              "slots": [
+                {
+                  "id": "1873",
+                  "label": "1873",
+                  "sub": "Meiji 6"
+                },
+                {
+                  "id": "1874",
+                  "label": "1874",
+                  "sub": "Meiji 7"
+                },
+                {
+                  "id": "1875",
+                  "label": "1875",
+                  "sub": "Meiji 8"
+                },
+                {
+                  "id": "1876",
+                  "label": "1876",
+                  "sub": "Meiji 9"
+                },
+                {
+                  "id": "1877",
+                  "label": "1877",
+                  "sub": "Meiji 10"
+                },
+                {
+                  "id": "1878",
+                  "label": "1878",
+                  "sub": "Meiji 11"
+                },
+                {
+                  "id": "1879",
+                  "label": "1879",
+                  "sub": "Meiji 12"
+                },
+                {
+                  "id": "1880",
+                  "label": "1880",
+                  "sub": "Meiji 13"
+                },
+                {
+                  "id": "1881",
+                  "label": "1881",
+                  "sub": "Meiji 14"
+                },
+                {
+                  "id": "1882",
+                  "label": "1882",
+                  "sub": "Meiji 15"
+                },
+                {
+                  "id": "1883",
+                  "label": "1883",
+                  "sub": "Meiji 16"
+                },
+                {
+                  "id": "1884",
+                  "label": "1884",
+                  "sub": "Meiji 17"
+                }
               ]
             }
           ]

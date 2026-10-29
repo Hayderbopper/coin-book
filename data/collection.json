@@ -49,6 +49,43 @@
       "added": "2026-10-29",
       "updated": "2026-10-29",
       "sample": true
+    },
+    "canada/cent/elizabeth-ii-round/1978": {
+      "sides": {
+        "reverse": {
+          "image": "images/canada/cent/elizabeth-ii-round/1978/reverse.png",
+          "thumb": "images/canada/cent/elizabeth-ii-round/1978/reverse-thumb.webp",
+          "width": 1619,
+          "height": 1403
+        }
+      },
+      "added": "2026-10-29",
+      "updated": "2026-10-29"
+    },
+    "bulgaria/1-stotinka/madara-rider/1999": {
+      "sides": {
+        "obverse": {
+          "image": "images/bulgaria/1-stotinka/madara-rider/1999/obverse.png",
+          "thumb": "images/bulgaria/1-stotinka/madara-rider/1999/obverse-thumb.webp",
+          "width": 2097,
+          "height": 2097
+        }
+      },
+      "added": "2026-10-29",
+      "updated": "2026-10-29"
+    },
+    "japan/2-sen/dragon/1881": {
+      "sides": {
+        "obverse": {
+          "image": "images/japan/2-sen/dragon/1881/obverse.png",
+          "thumb": "images/japan/2-sen/dragon/1881/obverse-thumb.webp",
+          "width": 3817,
+          "height": 3817,
+          "tiles": "images/japan/2-sen/dragon/1881/obverse.dzi"
+        }
+      },
+      "added": "2026-10-29",
+      "updated": "2026-10-29"
     }
   }
 }
