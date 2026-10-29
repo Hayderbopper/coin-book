@@ -19,14 +19,44 @@
               "description": "Victor David Brenner's Lincoln portrait with two wheat ears on the reverse. 1943 cents are zinc-coated steel.",
               "slots": [
                 "1909",
-                "1909 VDB",
+                {
+                  "id": "1909-vdb",
+                  "label": "1909",
+                  "sub": "VDB",
+                  "variety": true
+                },
                 "1909-S",
-                "1909-S VDB",
+                {
+                  "id": "1909-s-vdb",
+                  "label": "1909-S",
+                  "sub": "VDB",
+                  "variety": true
+                },
                 "1910",
                 "1910-S",
                 {
                   "range": [
                     1911,
+                    1916
+                  ],
+                  "mints": [
+                    "",
+                    "D",
+                    "S"
+                  ]
+                },
+                "1917",
+                {
+                  "id": "1917-doubled-die-obverse",
+                  "label": "1917",
+                  "sub": "Doubled Die Obverse",
+                  "variety": true
+                },
+                "1917-D",
+                "1917-S",
+                {
+                  "range": [
+                    1918,
                     1920
                   ],
                   "mints": [
@@ -41,7 +71,8 @@
                 {
                   "id": "1922-no-d",
                   "label": "1922",
-                  "sub": "No D"
+                  "sub": "No D",
+                  "variety": true
                 },
                 "1923",
                 "1923-S",
@@ -65,7 +96,7 @@
                 {
                   "range": [
                     1935,
-                    1955
+                    1935
                   ],
                   "mints": [
                     "",
@@ -73,6 +104,55 @@
                     "S"
                   ]
                 },
+                "1936",
+                {
+                  "id": "1936-doubled-die-obverse",
+                  "label": "1936",
+                  "sub": "Doubled Die Obverse",
+                  "variety": true
+                },
+                "1936-D",
+                "1936-S",
+                {
+                  "range": [
+                    1937,
+                    1943
+                  ],
+                  "mints": [
+                    "",
+                    "D",
+                    "S"
+                  ]
+                },
+                "1944",
+                "1944-D",
+                {
+                  "id": "1944-d-d-over-s",
+                  "label": "1944-D",
+                  "sub": "D over S",
+                  "variety": true
+                },
+                "1944-S",
+                {
+                  "range": [
+                    1945,
+                    1954
+                  ],
+                  "mints": [
+                    "",
+                    "D",
+                    "S"
+                  ]
+                },
+                "1955",
+                {
+                  "id": "1955-doubled-die-obverse",
+                  "label": "1955",
+                  "sub": "Doubled Die Obverse",
+                  "variety": true
+                },
+                "1955-D",
+                "1955-S",
                 "1956",
                 "1956-D",
                 "1957",
@@ -86,11 +166,43 @@
               "name": "Lincoln Memorial",
               "dates": "1959–2008",
               "diameter_mm": 19.05,
-              "description": "Frank Gasparro's Lincoln Memorial reverse. Copper until mid-1982, copper-plated zinc after. 1965–1967 coins carry no mint mark.",
+              "description": "Frank Gasparro's Lincoln Memorial reverse. Copper until mid-1982, copper-plated zinc after, which is why 1982 has seven slots. 1965–1967 coins carry no mint mark.",
               "slots": [
                 {
                   "range": [
                     1959,
+                    1959
+                  ],
+                  "mints": [
+                    "",
+                    "D"
+                  ]
+                },
+                {
+                  "id": "1960-large-date",
+                  "label": "1960",
+                  "sub": "Large Date"
+                },
+                {
+                  "id": "1960-small-date",
+                  "label": "1960",
+                  "sub": "Small Date",
+                  "variety": true
+                },
+                {
+                  "id": "1960-d-large-date",
+                  "label": "1960-D",
+                  "sub": "Large Date"
+                },
+                {
+                  "id": "1960-d-small-date",
+                  "label": "1960-D",
+                  "sub": "Small Date",
+                  "variety": true
+                },
+                {
+                  "range": [
+                    1961,
                     1964
                   ],
                   "mints": [
@@ -104,6 +216,59 @@
                 {
                   "range": [
                     1968,
+                    1968
+                  ],
+                  "mints": [
+                    "",
+                    "D",
+                    "S"
+                  ]
+                },
+                "1969",
+                "1969-D",
+                "1969-S",
+                {
+                  "id": "1969-s-doubled-die-obverse",
+                  "label": "1969-S",
+                  "sub": "Doubled Die Obverse",
+                  "variety": true
+                },
+                "1970",
+                "1970-D",
+                {
+                  "id": "1970-s-large-date-low-7",
+                  "label": "1970-S",
+                  "sub": "Large Date (low 7)"
+                },
+                {
+                  "id": "1970-s-small-date-high-7",
+                  "label": "1970-S",
+                  "sub": "Small Date (high 7)",
+                  "variety": true
+                },
+                {
+                  "range": [
+                    1971,
+                    1971
+                  ],
+                  "mints": [
+                    "",
+                    "D",
+                    "S"
+                  ]
+                },
+                "1972",
+                {
+                  "id": "1972-doubled-die-obverse",
+                  "label": "1972",
+                  "sub": "Doubled Die Obverse",
+                  "variety": true
+                },
+                "1972-D",
+                "1972-S",
+                {
+                  "range": [
+                    1973,
                     1974
                   ],
                   "mints": [
@@ -115,6 +280,148 @@
                 {
                   "range": [
                     1975,
+                    1981
+                  ],
+                  "mints": [
+                    "",
+                    "D"
+                  ]
+                },
+                {
+                  "id": "1982-large-date-copper",
+                  "label": "1982",
+                  "sub": "Large Date, copper"
+                },
+                {
+                  "id": "1982-small-date-copper",
+                  "label": "1982",
+                  "sub": "Small Date, copper",
+                  "variety": true
+                },
+                {
+                  "id": "1982-large-date-zinc",
+                  "label": "1982",
+                  "sub": "Large Date, zinc",
+                  "variety": true
+                },
+                {
+                  "id": "1982-small-date-zinc",
+                  "label": "1982",
+                  "sub": "Small Date, zinc",
+                  "variety": true
+                },
+                {
+                  "id": "1982-d-large-date-copper",
+                  "label": "1982-D",
+                  "sub": "Large Date, copper"
+                },
+                {
+                  "id": "1982-d-large-date-zinc",
+                  "label": "1982-D",
+                  "sub": "Large Date, zinc",
+                  "variety": true
+                },
+                {
+                  "id": "1982-d-small-date-zinc",
+                  "label": "1982-D",
+                  "sub": "Small Date, zinc",
+                  "variety": true
+                },
+                "1983",
+                {
+                  "id": "1983-doubled-die-reverse",
+                  "label": "1983",
+                  "sub": "Doubled Die Reverse",
+                  "variety": true
+                },
+                "1983-D",
+                "1984",
+                {
+                  "id": "1984-doubled-ear",
+                  "label": "1984",
+                  "sub": "Doubled Ear",
+                  "variety": true
+                },
+                "1984-D",
+                {
+                  "range": [
+                    1985,
+                    1991
+                  ],
+                  "mints": [
+                    "",
+                    "D"
+                  ]
+                },
+                "1992",
+                {
+                  "id": "1992-close-am",
+                  "label": "1992",
+                  "sub": "Close AM",
+                  "variety": true
+                },
+                "1992-D",
+                {
+                  "id": "1992-d-close-am",
+                  "label": "1992-D",
+                  "sub": "Close AM",
+                  "variety": true
+                },
+                {
+                  "range": [
+                    1993,
+                    1994
+                  ],
+                  "mints": [
+                    "",
+                    "D"
+                  ]
+                },
+                "1995",
+                {
+                  "id": "1995-doubled-die-obverse",
+                  "label": "1995",
+                  "sub": "Doubled Die Obverse",
+                  "variety": true
+                },
+                "1995-D",
+                {
+                  "range": [
+                    1996,
+                    1997
+                  ],
+                  "mints": [
+                    "",
+                    "D"
+                  ]
+                },
+                "1998",
+                {
+                  "id": "1998-wide-am",
+                  "label": "1998",
+                  "sub": "Wide AM",
+                  "variety": true
+                },
+                "1998-D",
+                "1999",
+                {
+                  "id": "1999-wide-am",
+                  "label": "1999",
+                  "sub": "Wide AM",
+                  "variety": true
+                },
+                "1999-D",
+                "2000",
+                {
+                  "id": "2000-wide-am",
+                  "label": "2000",
+                  "sub": "Wide AM",
+                  "variety": true
+                },
+                "2000-D",
+                {
+                  "range": [
+                    2001,
                     2008
                   ],
                   "mints": [
@@ -178,11 +485,27 @@
               "name": "Lincoln Shield",
               "dates": "2010–2025",
               "diameter_mm": 19.05,
-              "description": "Union shield reverse by Lyndall Bass. Circulation strikes ended in November 2025.",
+              "description": "Union shield reverse by Lyndall Bass. 2017 Philadelphia cents are the only ones with a P mint mark. Circulation strikes ended in November 2025.",
               "slots": [
                 {
                   "range": [
                     2010,
+                    2016
+                  ],
+                  "mints": [
+                    "",
+                    "D"
+                  ]
+                },
+                {
+                  "id": "2017",
+                  "label": "2017",
+                  "sub": "P mint mark"
+                },
+                "2017-D",
+                {
+                  "range": [
+                    2018,
                     2025
                   ],
                   "mints": [

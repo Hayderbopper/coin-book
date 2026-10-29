@@ -194,6 +194,10 @@ button.hole img { width: 100%; height: 100%; object-fit: contain; display: block
 .slot-flags i { width: 6px; height: 6px; border-radius: 50%; background: var(--foil-bright); }
 .slot-flags i.off { background: transparent; box-shadow: inset 0 0 0 1px var(--hole-rim); }
 .slots.filled-only .slot.is-empty { display: none; }
+.slots.hide-varieties .slot.is-variety { display: none; }
+.slot.is-variety .hole { box-shadow: inset 0 3px 8px rgba(0,0,0,0.75), 0 0 0 2px var(--board), 0 0 0 3.5px var(--foil); }
+.slot.is-variety .slot-sub { color: var(--foil-bright); }
+.variety-key { display: inline-block; width: 0.7rem; height: 0.7rem; border-radius: 50%; box-shadow: 0 0 0 1.5px var(--foil-bright); margin-right: 0.45rem; vertical-align: -0.05rem; }
 .sample-tag { font: 500 0.62rem/1 var(--font-mono); letter-spacing: 0.08em; color: var(--board); background: var(--foil-bright); padding: 2px 5px; border-radius: 3px; }
 
 /* ---------- recent strip ---------- */

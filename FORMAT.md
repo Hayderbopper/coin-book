@@ -59,6 +59,10 @@ A `slots` entry can be any of three forms. They are listed in folder order.
 | Range | `{ "range": [2010, 2012], "mints": ["", "D"] }` | `2010`, `2010-D`, `2011`, `2011-D`, `2012`, `2012-D` |
 | Object | `{ "id": "2009-d-presidency", "label": "2009-D", "sub": "Presidency" }` | that exact id; `sub` is a second line under the label |
 
+Add `"variety": true` to an object slot to mark it as a die variety or other
+sub-type (for example `{ "id": "1955-doubled-die-obverse", "label": "1955", "sub": "Doubled Die Obverse", "variety": true }`).
+The board gives it a gold ring and a "Varieties" button that hides or shows them.
+
 A slot id is made by lowercasing the label and turning every run of other
 characters into one `-` (so `1909-S VDB` becomes `1909-s-vdb`). `mints: [""]` means
 no mint mark.

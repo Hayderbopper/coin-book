@@ -14,6 +14,7 @@
   const crumbs = document.getElementById("crumbs");
   let catalog, collection, osd;
   let filledOnly = false;
+  let showVarieties = true;
   const viewerState = { key: null, side: null, order: [] };
 
   // ---------- data ----------
@@ -34,7 +35,7 @@
             out.push({ id: slugify(label), label, sub: "" });
           }
         }
-      } else out.push({ id: s.id || slugify(s.label), label: s.label, sub: s.sub || "" });
+      } else out.push({ id: s.id || slugify(s.label), label: s.label, sub: s.sub || "", variety: !!s.variety });
     }
     return out;
   }
@@ -199,7 +200,8 @@
       { href: `#${country.id}/${denom.id}`, text: denomName(denom) }, { text: series.name },
     ]);
     const st = seriesStats(country, denom, series);
-    const grid = h("ol", { class: "slots" + (filledOnly ? " filled-only" : "") });
+    const grid = h("ol", { class: "slots" + (filledOnly ? " filled-only" : "") + (showVarieties ? "" : " hide-varieties") });
+    const varietyCount = st.slots.filter((s) => s.variety).length;
     for (const slot of st.slots) {
       const key = `${st.base}/${slot.id}`;
       const coin = coinAt(key);
@@ -208,12 +210,12 @@
       if (coin) {
         const flags = h("span", { class: "slot-flags", "aria-hidden": "true" },
           ["obverse", "reverse"].map((s) => h("i", { class: coin.sides[s] ? "" : "off", title: SIDE_NAMES[s] })));
-        grid.append(h("li", { class: "slot is-filled" },
+        grid.append(h("li", { class: "slot is-filled" + (slot.variety ? " is-variety" : "") },
           h("button", { class: "hole", type: "button", "aria-label": `Open ${name}`, onclick: () => { location.hash = key; } },
             h("img", { src: thumbOf(coin), alt: "", loading: "lazy" })),
           label, coin.sample ? h("span", { class: "sample-tag", text: "TEST IMAGE" }) : flags));
       } else {
-        grid.append(h("li", { class: "slot is-empty", "aria-label": `${name}, empty` },
+        grid.append(h("li", { class: "slot is-empty" + (slot.variety ? " is-variety" : ""), "aria-label": `${name}${slot.variety ? " (variety)" : ""}, empty` },
           h("span", { class: "hole" }), label));
       }
     }
@@ -222,6 +224,13 @@
       filledOnly = !filledOnly;
       toggle.setAttribute("aria-pressed", String(filledOnly));
       grid.classList.toggle("filled-only", filledOnly);
+    });
+    const varToggle = h("button", { class: "chip", type: "button", "aria-pressed": String(showVarieties) },
+      h("span", { class: "variety-key", "aria-hidden": "true" }), `Varieties (${varietyCount})`);
+    varToggle.addEventListener("click", () => {
+      showVarieties = !showVarieties;
+      varToggle.setAttribute("aria-pressed", String(showVarieties));
+      grid.classList.toggle("hide-varieties", !showVarieties);
     });
     const pct = st.total ? Math.round((st.have / st.total) * 100) : 0;
     view.replaceChildren(h("section", { class: "board", "aria-label": `${series.name} folder` },
@@ -234,7 +243,7 @@
           h("span", {}, h("b", { text: `${st.have} of ${st.total}` }), " slots filled"),
           h("span", {}, h("b", { text: `${pct}%` }), " complete"),
           series.diameter_mm ? h("span", {}, h("b", { text: `${series.diameter_mm} mm` }), " diameter") : null)),
-      h("div", { class: "board-tools" }, toggle),
+      h("div", { class: "board-tools" }, toggle, varietyCount ? varToggle : null),
       grid));
     viewerState.order = st.filled.map((s) => `${st.base}/${s.id}`);
   }
