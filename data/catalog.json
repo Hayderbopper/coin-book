@@ -960,14 +960,23 @@
               ]
             },
             {
-              "id": "draped-bust",
-              "name": "Draped Bust",
-              "dates": "1796–1805",
+              "id": "draped-bust-small-eagle",
+              "name": "Draped Bust, Small Eagle",
+              "dates": "1796–1797",
               "diameter_mm": 16.5,
-              "description": "Small eagle reverse to 1797, heraldic eagle from 1800.",
+              "description": "Robert Scot's Draped Bust with a small eagle on a cloud.",
               "slots": [
                 "1796",
-                "1797",
+                "1797"
+              ]
+            },
+            {
+              "id": "draped-bust-heraldic-eagle",
+              "name": "Draped Bust, Heraldic Eagle",
+              "dates": "1800–1805",
+              "diameter_mm": 16.5,
+              "description": "The heraldic eagle reverse, copied from the Great Seal.",
+              "slots": [
                 "1800",
                 "1801",
                 "1802",
@@ -1094,23 +1103,24 @@
           "nickname": "Nickel",
           "series": [
             {
-              "id": "shield",
-              "name": "Shield",
-              "dates": "1866–1883",
+              "id": "shield-rays",
+              "name": "Shield, With Rays",
+              "dates": "1866–1867",
               "diameter_mm": 20.5,
-              "description": "The first copper-nickel five-cent piece. Rays between the stars were dropped in 1867. 1877 and 1878 were proofs only.",
+              "description": "The first copper-nickel five-cent piece, with rays between the stars on the reverse.",
               "slots": [
                 "1866",
-                {
-                  "id": "1867-with-rays",
-                  "label": "1867",
-                  "sub": "With Rays"
-                },
-                {
-                  "id": "1867-no-rays",
-                  "label": "1867",
-                  "sub": "No Rays"
-                },
+                "1867"
+              ]
+            },
+            {
+              "id": "shield-no-rays",
+              "name": "Shield, No Rays",
+              "dates": "1867–1883",
+              "diameter_mm": 20.5,
+              "description": "Rays removed because they made the coins hard to strike. 1877 and 1878 were proofs only.",
+              "slots": [
+                "1867",
                 "1868",
                 "1869",
                 "1870",
@@ -1184,42 +1194,27 @@
               ]
             },
             {
-              "id": "buffalo",
-              "name": "Buffalo",
+              "id": "buffalo-type-1",
+              "name": "Buffalo, Type 1",
+              "dates": "1913",
+              "diameter_mm": 21.2,
+              "description": "The bison stands on a raised mound. The FIVE CENTS on the mound wore away fast, so it was changed within months.",
+              "slots": [
+                "1913",
+                "1913-D",
+                "1913-S"
+              ]
+            },
+            {
+              "id": "buffalo-type-2",
+              "name": "Buffalo, Type 2",
               "dates": "1913–1938",
               "diameter_mm": 21.2,
-              "description": "James Earle Fraser's Indian Head and American bison. Type 1 shows the bison on a mound, Type 2 on flat ground.",
+              "description": "The mound is cut down to a flat line with FIVE CENTS recessed below it.",
               "slots": [
-                {
-                  "id": "1913-type-1",
-                  "label": "1913",
-                  "sub": "Type 1"
-                },
-                {
-                  "id": "1913-d-type-1",
-                  "label": "1913-D",
-                  "sub": "Type 1"
-                },
-                {
-                  "id": "1913-s-type-1",
-                  "label": "1913-S",
-                  "sub": "Type 1"
-                },
-                {
-                  "id": "1913-type-2",
-                  "label": "1913",
-                  "sub": "Type 2"
-                },
-                {
-                  "id": "1913-d-type-2",
-                  "label": "1913-D",
-                  "sub": "Type 2"
-                },
-                {
-                  "id": "1913-s-type-2",
-                  "label": "1913-S",
-                  "sub": "Type 2"
-                },
+                "1913",
+                "1913-D",
+                "1913-S",
                 "1914",
                 "1914-D",
                 "1914-S",
@@ -1608,14 +1603,23 @@
           "name": "Dime",
           "series": [
             {
-              "id": "draped-bust",
-              "name": "Draped Bust",
-              "dates": "1796–1807",
+              "id": "draped-bust-small-eagle",
+              "name": "Draped Bust, Small Eagle",
+              "dates": "1796–1797",
               "diameter_mm": 19,
-              "description": "Small eagle reverse to 1797, heraldic eagle from 1798.",
+              "description": "Robert Scot's Draped Bust with a small eagle on a cloud.",
               "slots": [
                 "1796",
-                "1797",
+                "1797"
+              ]
+            },
+            {
+              "id": "draped-bust-heraldic-eagle",
+              "name": "Draped Bust, Heraldic Eagle",
+              "dates": "1798–1807",
+              "diameter_mm": 19,
+              "description": "The heraldic eagle reverse.",
+              "slots": [
                 "1798",
                 "1800",
                 "1801",
@@ -1627,11 +1631,11 @@
               ]
             },
             {
-              "id": "capped-bust",
-              "name": "Capped Bust",
-              "dates": "1809–1837",
-              "diameter_mm": 18.5,
-              "description": "John Reich's Capped Bust.",
+              "id": "capped-bust-large",
+              "name": "Capped Bust, Large Size",
+              "dates": "1809–1828",
+              "diameter_mm": 18.8,
+              "description": "John Reich's Capped Bust, struck on the open-collar press.",
               "slots": [
                 "1809",
                 "1811",
@@ -1643,7 +1647,25 @@
                 "1824",
                 "1825",
                 "1827",
-                "1828",
+                {
+                  "id": "1828-large-date",
+                  "label": "1828",
+                  "sub": "Large Date"
+                }
+              ]
+            },
+            {
+              "id": "capped-bust-small",
+              "name": "Capped Bust, Small Size",
+              "dates": "1828–1837",
+              "diameter_mm": 18.5,
+              "description": "Struck in a close collar from 1828, giving a smaller, uniform coin.",
+              "slots": [
+                {
+                  "id": "1828-small-date",
+                  "label": "1828",
+                  "sub": "Small Date"
+                },
                 "1829",
                 "1830",
                 "1831",
@@ -2201,13 +2223,22 @@
           "name": "Quarter",
           "series": [
             {
-              "id": "draped-bust",
-              "name": "Draped Bust",
-              "dates": "1796–1807",
+              "id": "draped-bust-small-eagle",
+              "name": "Draped Bust, Small Eagle",
+              "dates": "1796",
               "diameter_mm": 27.5,
-              "description": "Small eagle reverse in 1796, heraldic eagle from 1804.",
+              "description": "The first US quarter. Only 6,146 were struck.",
               "slots": [
-                "1796",
+                "1796"
+              ]
+            },
+            {
+              "id": "draped-bust-heraldic-eagle",
+              "name": "Draped Bust, Heraldic Eagle",
+              "dates": "1804–1807",
+              "diameter_mm": 27.5,
+              "description": "The heraldic eagle reverse.",
+              "slots": [
                 "1804",
                 "1805",
                 "1806",
@@ -2215,11 +2246,11 @@
               ]
             },
             {
-              "id": "capped-bust",
-              "name": "Capped Bust",
-              "dates": "1815–1838",
+              "id": "capped-bust-large",
+              "name": "Capped Bust, Large Size",
+              "dates": "1815–1828",
               "diameter_mm": 27,
-              "description": "Large size to 1828, then reduced to 24.3 mm from 1831.",
+              "description": "John Reich's Capped Bust with E PLURIBUS UNUM on a scroll.",
               "slots": [
                 "1815",
                 "1818",
@@ -2230,7 +2261,16 @@
                 "1823",
                 "1824",
                 "1825",
-                "1828",
+                "1828"
+              ]
+            },
+            {
+              "id": "capped-bust-small",
+              "name": "Capped Bust, Small Size",
+              "dates": "1831–1838",
+              "diameter_mm": 24.3,
+              "description": "William Kneass's reduced quarter, struck in a close collar without the motto.",
+              "slots": [
                 "1831",
                 "1832",
                 "1833",
@@ -2464,43 +2504,28 @@
               ]
             },
             {
-              "id": "standing-liberty",
-              "name": "Standing Liberty",
-              "dates": "1916–1930",
+              "id": "standing-liberty-type-1",
+              "name": "Standing Liberty, Type 1",
+              "dates": "1916–1917",
               "diameter_mm": 24.3,
-              "description": "Hermon MacNeil's Standing Liberty. Type 2 (from 1917) covers her chest in mail. From 1925 the date is recessed so it wears less.",
+              "description": "Hermon MacNeil's original design with Liberty's bare breast.",
               "slots": [
                 "1916",
-                {
-                  "id": "1917-type-1",
-                  "label": "1917",
-                  "sub": "Type 1"
-                },
-                {
-                  "id": "1917-d-type-1",
-                  "label": "1917-D",
-                  "sub": "Type 1"
-                },
-                {
-                  "id": "1917-s-type-1",
-                  "label": "1917-S",
-                  "sub": "Type 1"
-                },
-                {
-                  "id": "1917-type-2",
-                  "label": "1917",
-                  "sub": "Type 2"
-                },
-                {
-                  "id": "1917-d-type-2",
-                  "label": "1917-D",
-                  "sub": "Type 2"
-                },
-                {
-                  "id": "1917-s-type-2",
-                  "label": "1917-S",
-                  "sub": "Type 2"
-                },
+                "1917",
+                "1917-D",
+                "1917-S"
+              ]
+            },
+            {
+              "id": "standing-liberty-type-2",
+              "name": "Standing Liberty, Type 2",
+              "dates": "1917–1930",
+              "diameter_mm": 24.3,
+              "description": "Liberty's chest covered in mail and the eagle raised, with three stars moved below it. From 1925 the date is recessed so it wears less.",
+              "slots": [
+                "1917",
+                "1917-D",
+                "1917-S",
                 "1918",
                 "1918-D",
                 "1918-S",
@@ -2636,7 +2661,7 @@
               "name": "Washington, Clad",
               "dates": "1965–1998",
               "diameter_mm": 24.3,
-              "description": "Copper-nickel clad. 1976 coins show the Bicentennial drummer boy and are dated 1776–1976; none are dated 1975.",
+              "description": "Copper-nickel clad. No quarters are dated 1975; those years are in the Bicentennial folder.",
               "slots": [
                 "1965",
                 "1966",
@@ -2655,16 +2680,6 @@
                 "1973-D",
                 "1974",
                 "1974-D",
-                {
-                  "id": "1976-bicentennial",
-                  "label": "1976",
-                  "sub": "Bicentennial"
-                },
-                {
-                  "id": "1976-d-bicentennial",
-                  "label": "1976-D",
-                  "sub": "Bicentennial"
-                },
                 "1977",
                 "1977-D",
                 "1978",
@@ -2709,6 +2724,17 @@
                 "1997-D",
                 "1998",
                 "1998-D"
+              ]
+            },
+            {
+              "id": "bicentennial",
+              "name": "Washington, Bicentennial",
+              "dates": "1776–1976",
+              "diameter_mm": 24.3,
+              "description": "Jack Ahr's colonial drummer boy, struck in 1975 and 1976 and all dated 1776–1976.",
+              "slots": [
+                "1976",
+                "1976-D"
               ]
             },
             {
@@ -4096,14 +4122,23 @@
               ]
             },
             {
-              "id": "draped-bust",
-              "name": "Draped Bust",
-              "dates": "1796–1807",
+              "id": "draped-bust-small-eagle",
+              "name": "Draped Bust, Small Eagle",
+              "dates": "1796–1797",
               "diameter_mm": 32.5,
-              "description": "Small eagle reverse in 1796–1797, heraldic eagle from 1801.",
+              "description": "Only about 3,900 were struck, making it one of the rarest US types.",
               "slots": [
                 "1796",
-                "1797",
+                "1797"
+              ]
+            },
+            {
+              "id": "draped-bust-heraldic-eagle",
+              "name": "Draped Bust, Heraldic Eagle",
+              "dates": "1801–1807",
+              "diameter_mm": 32.5,
+              "description": "The heraldic eagle reverse.",
+              "slots": [
                 "1801",
                 "1802",
                 "1803",
@@ -4113,11 +4148,11 @@
               ]
             },
             {
-              "id": "capped-bust",
-              "name": "Capped Bust",
-              "dates": "1807–1839",
+              "id": "capped-bust-lettered",
+              "name": "Capped Bust, Lettered Edge",
+              "dates": "1807–1836",
               "diameter_mm": 32.5,
-              "description": "John Reich's Capped Bust, with a lettered edge until 1836, then a reeded edge. No halves are dated 1816.",
+              "description": "John Reich's Capped Bust with FIFTY CENTS OR HALF A DOLLAR on the edge. No halves are dated 1816.",
               "slots": [
                 "1807",
                 "1808",
@@ -4147,12 +4182,17 @@
                 "1833",
                 "1834",
                 "1835",
+                "1836"
+              ]
+            },
+            {
+              "id": "capped-bust-reeded",
+              "name": "Capped Bust, Reeded Edge",
+              "dates": "1836–1839",
+              "diameter_mm": 30,
+              "description": "Smaller coins struck on the new steam press, with a reeded edge and a new denomination on the reverse.",
+              "slots": [
                 "1836",
-                {
-                  "id": "1836-reeded-edge",
-                  "label": "1836",
-                  "sub": "Reeded Edge"
-                },
                 "1837",
                 "1838",
                 "1838-O",
@@ -4533,7 +4573,7 @@
               "name": "Kennedy",
               "dates": "1964–2025",
               "diameter_mm": 30.6,
-              "description": "Gilroy Roberts's Kennedy. 90% silver in 1964, 40% silver 1965–1970, clad after. 1970-D was only in mint sets; 1976 shows Independence Hall.",
+              "description": "Gilroy Roberts's Kennedy. 90% silver in 1964, 40% silver 1965–1970, clad after. 1970-D was only in mint sets. No halves are dated 1975.",
               "slots": [
                 "1964",
                 "1964-D",
@@ -4556,16 +4596,6 @@
                   "label": "1974-D",
                   "sub": "Doubled Die Obverse",
                   "variety": true
-                },
-                {
-                  "id": "1976-bicentennial",
-                  "label": "1976",
-                  "sub": "Bicentennial"
-                },
-                {
-                  "id": "1976-d-bicentennial",
-                  "label": "1976-D",
-                  "sub": "Bicentennial"
                 },
                 "1977",
                 "1977-D",
@@ -4666,13 +4696,23 @@
                 "2025",
                 "2025-D"
               ]
+            },
+            {
+              "id": "kennedy-bicentennial",
+              "name": "Kennedy, Bicentennial",
+              "dates": "1776–1976",
+              "diameter_mm": 30.6,
+              "description": "Seth Huntington's Independence Hall reverse, dated 1776–1976.",
+              "slots": [
+                "1976",
+                "1976-D"
+              ]
             }
           ]
         },
         {
           "id": "dollar",
           "name": "Dollar",
-          "nickname": "Large",
           "series": [
             {
               "id": "flowing-hair",
@@ -4686,25 +4726,26 @@
               ]
             },
             {
-              "id": "draped-bust",
-              "name": "Draped Bust",
-              "dates": "1795–1803",
+              "id": "draped-bust-small-eagle",
+              "name": "Draped Bust, Small Eagle",
+              "dates": "1795–1798",
               "diameter_mm": 39.5,
-              "description": "Small eagle reverse to 1798, heraldic eagle after. The famous 1804 dollar was struck later, as a proof.",
+              "description": "Robert Scot's Draped Bust with a small eagle on a cloud.",
               "slots": [
                 "1795",
                 "1796",
                 "1797",
-                {
-                  "id": "1798-small-eagle",
-                  "label": "1798",
-                  "sub": "Small Eagle"
-                },
-                {
-                  "id": "1798-heraldic-eagle",
-                  "label": "1798",
-                  "sub": "Heraldic Eagle"
-                },
+                "1798"
+              ]
+            },
+            {
+              "id": "draped-bust-heraldic-eagle",
+              "name": "Draped Bust, Heraldic Eagle",
+              "dates": "1798–1803",
+              "diameter_mm": 39.5,
+              "description": "The heraldic eagle reverse. The famous 1804 dollar was struck decades later as a proof.",
+              "slots": [
+                "1798",
                 "1799",
                 "1800",
                 "1801",
@@ -4952,7 +4993,7 @@
               "name": "Eisenhower",
               "dates": "1971–1978",
               "diameter_mm": 38.1,
-              "description": "Frank Gasparro's Eisenhower. The 1976 coins show the Liberty Bell and Moon with two lettering types.",
+              "description": "Frank Gasparro's Eisenhower with the Apollo 11 eagle landing on the Moon. None are dated 1975.",
               "slots": [
                 "1971",
                 "1971-D",
@@ -4962,6 +5003,19 @@
                 "1973-D",
                 "1974",
                 "1974-D",
+                "1977",
+                "1977-D",
+                "1978",
+                "1978-D"
+              ]
+            },
+            {
+              "id": "eisenhower-bicentennial",
+              "name": "Eisenhower, Bicentennial",
+              "dates": "1776–1976",
+              "diameter_mm": 38.1,
+              "description": "Dennis Williams's Liberty Bell over the Moon. Type 1 has thick lettering on the reverse, Type 2 thinner lettering.",
+              "slots": [
                 {
                   "id": "1976-type-1",
                   "label": "1976",
@@ -4981,20 +5035,9 @@
                   "id": "1976-d-type-2",
                   "label": "1976-D",
                   "sub": "Type 2"
-                },
-                "1977",
-                "1977-D",
-                "1978",
-                "1978-D"
+                }
               ]
-            }
-          ]
-        },
-        {
-          "id": "small-dollar",
-          "name": "Dollar",
-          "nickname": "Small",
-          "series": [
+            },
             {
               "id": "susan-b-anthony",
               "name": "Susan B. Anthony",
@@ -5046,49 +5089,6 @@
                 "2007-D",
                 "2008",
                 "2008-D"
-              ]
-            },
-            {
-              "id": "native-american",
-              "name": "Native American",
-              "dates": "2009–2025",
-              "diameter_mm": 26.5,
-              "description": "The Sacagawea obverse with a new reverse each year honoring Native American contributions.",
-              "slots": [
-                "2009",
-                "2009-D",
-                "2010",
-                "2010-D",
-                "2011",
-                "2011-D",
-                "2012",
-                "2012-D",
-                "2013",
-                "2013-D",
-                "2014",
-                "2014-D",
-                "2015",
-                "2015-D",
-                "2016",
-                "2016-D",
-                "2017",
-                "2017-D",
-                "2018",
-                "2018-D",
-                "2019",
-                "2019-D",
-                "2020",
-                "2020-D",
-                "2021",
-                "2021-D",
-                "2022",
-                "2022-D",
-                "2023",
-                "2023-D",
-                "2024",
-                "2024-D",
-                "2025",
-                "2025-D"
               ]
             },
             {
@@ -5498,6 +5498,49 @@
                   "label": "2020-D",
                   "sub": "George H. W. Bush"
                 }
+              ]
+            },
+            {
+              "id": "native-american",
+              "name": "Native American",
+              "dates": "2009–2025",
+              "diameter_mm": 26.5,
+              "description": "The Sacagawea obverse with a new reverse each year honoring Native American contributions.",
+              "slots": [
+                "2009",
+                "2009-D",
+                "2010",
+                "2010-D",
+                "2011",
+                "2011-D",
+                "2012",
+                "2012-D",
+                "2013",
+                "2013-D",
+                "2014",
+                "2014-D",
+                "2015",
+                "2015-D",
+                "2016",
+                "2016-D",
+                "2017",
+                "2017-D",
+                "2018",
+                "2018-D",
+                "2019",
+                "2019-D",
+                "2020",
+                "2020-D",
+                "2021",
+                "2021-D",
+                "2022",
+                "2022-D",
+                "2023",
+                "2023-D",
+                "2024",
+                "2024-D",
+                "2025",
+                "2025-D"
               ]
             },
             {
