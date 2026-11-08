@@ -18,6 +18,7 @@ data/collection.json  which slots are filled, and where their images are
 images/               the scans, one folder per slot
 tools/add_coin.py     puts a scan into a slot
 FORMAT.md             exact format of the JSON files, for the C++ app
+scanner/              the microscope rig's control code, plus a simulator and tests (scanner/README.md)
 ```
 
 ## Try it on your computer

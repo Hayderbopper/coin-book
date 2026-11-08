@@ -1,2 +1,4 @@
 __pycache__/
 *.tmp
+scanner/windows/config.json
+scanner/windows/rig_sim.json
