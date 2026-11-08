@@ -114,7 +114,7 @@ python rig_sim.py scan 16 --out bulgaria --sim-coin ..\..\images\bulgaria\1-stot
 
 Any setting in the `SETTINGS` list at the top of `rig_sim.py` can be given as `--sim-<name>`, or saved in a `rig_sim.json` file next to it so every command uses it. For example `{"coin_offset_mm": [0.8, -0.5]}` puts the coin down off-centre, and `{"camera_mirrored": true}` flips the picture.
 
-**Automated tests.** `python test_rig.py` runs 13 checks against the simulated rig. The simulator knows exactly where the coin is, so the tests check that the answers are right, not just that nothing crashed:
+**Automated tests.** `python test_rig.py` runs 14 checks against the simulated rig. The simulator knows exactly where the coin is, so the tests check that the answers are right, not just that nothing crashed:
 
 - The fake Nano answers every command exactly as `coin_stage.ino` does, including the limits and the backlash overshoot.
 - `calibrate` finds the true scale within 2% and the camera's angle within 2°, including with a mirrored camera.

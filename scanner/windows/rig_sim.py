@@ -134,6 +134,11 @@ def read_firmware_settings(path=None):
     return found
 
 
+def _lround(value):
+    """C's lround(): halves round away from zero (Python's round() rounds them to even)."""
+    return int(math.floor(abs(value) + 0.5)) * (1 if value >= 0 else -1)
+
+
 def _to_float(text):
     """Arduino's String.toFloat(): reads a leading number and ignores the rest (0 if there is none)."""
     m = re.match(r"\s*[-+]?(\d+\.?\d*|\.\d+)", text)
@@ -199,8 +204,8 @@ class CoinStageFirmware:
     # -- helpers from the .ino
     def move_axis(self, axis, mm):
         spm = self.fw["STEPS_PER_MM"]
-        target = round(mm * spm)
-        backlash = round(self.fw["BACKLASH_MM"] * spm)
+        target = _lround(mm * spm)
+        backlash = _lround(self.fw["BACKLASH_MM"] * spm)
         axis.energised = True
         steps = 0
         if target < axis.pos:

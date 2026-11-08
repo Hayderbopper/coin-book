@@ -56,8 +56,11 @@ def load_config():
 
 
 def save_config(cfg):
-    with open(CONFIG_PATH, "w") as f:
+    # Write to a spare file first, so an interrupted save can't leave a broken config.json.
+    tmp = CONFIG_PATH + ".tmp"
+    with open(tmp, "w") as f:
         json.dump(cfg, f, indent=2)
+    os.replace(tmp, CONFIG_PATH)
     print(f"Saved settings to {CONFIG_PATH}")
 
 
@@ -271,7 +274,7 @@ def cmd_calibrate(cfg, args):
         stage.move(0, 0)
         time.sleep(cfg["settle_s"])
         base = camera.grab()
-        vecs = []
+        vecs, responses = [], []
         for axis in ("X", "Y"):
             stage.move(dist if axis == "X" else 0, dist if axis == "Y" else 0)
             time.sleep(cfg["settle_s"])
@@ -282,13 +285,21 @@ def cmd_calibrate(cfg, args):
             if response < 0.05:
                 print("  Match quality is low. Make sure the coin is in focus and has detail in view.")
             vecs.append(shift / dist)
+            responses.append(response)
             stage.move(0, 0)
             time.sleep(cfg["settle_s"])
     finally:
         stage.off()
         camera.close()
 
-    px_per_mm = float((np.linalg.norm(vecs[0]) + np.linalg.norm(vecs[1])) / 2)
+    norms = [float(np.linalg.norm(v)) for v in vecs]
+    if not all(math.isfinite(n) and n > 0 for n in norms):
+        raise SystemExit("The picture didn't move, so nothing was saved. Check the motors are wired and "
+                         "the coin is in view, then try again.")
+    if min(responses) < 0.05:
+        raise SystemExit("The match quality was too low to trust, so the old settings were kept. "
+                         "Focus on the coin and make sure there's detail in view, then try again.")
+    px_per_mm = float((norms[0] + norms[1]) / 2)
     cfg["px_per_mm"] = round(px_per_mm, 3)
     cfg["x_vec"] = [round(float(v), 4) for v in vecs[0] / np.linalg.norm(vecs[0])]
     cfg["y_vec"] = [round(float(v), 4) for v in vecs[1] / np.linalg.norm(vecs[1])]
@@ -358,8 +369,10 @@ def cmd_scan(cfg, args):
             else:
                 img = cv2.cvtColor(frame, cv2.COLOR_BGR2BGRA)
                 img[:, :, 3] = coin_mask(frame.shape, cfg, x, y, radius)
-            cv2.imwrite(os.path.join(out, name), img)
-            rows.append({"file": name, "x_mm": round(x, 3), "y_mm": round(y, 3), "masked": not inside})
+            if not cv2.imwrite(os.path.join(out, name), img):
+                raise RuntimeError(f"Could not save {name} in {out}. Is the disk full?")
+            masked = not (inside or args.no_mask)
+            rows.append({"file": name, "x_mm": round(x, 3), "y_mm": round(y, 3), "masked": masked})
             print(f"  {n}/{len(tiles)}  {name}  ({x:+.2f}, {y:+.2f}) {'' if inside else 'edge'}")
         stage.move(0, 0)
         with open(os.path.join(out, "positions.csv"), "w", newline="") as f:
@@ -423,6 +436,12 @@ def cmd_stitch(cfg, args):
     stage put it, so Hugin only has to fine-tune."""
     folder = os.path.abspath(args.folder)
     tiles = sorted(f for f in os.listdir(folder) if f.startswith("tile_") and f.endswith(".png"))
+    positions = os.path.join(folder, "positions.csv")
+    if os.path.exists(positions):
+        # Only this scan's photos: an earlier scan into the same folder may have left extra ones.
+        with open(positions) as f:
+            listed = {r["file"] for r in csv.DictReader(f)}
+        tiles = [t for t in tiles if t in listed]
     # Edge photos with only a sliver of coin add nothing the neighbours don't
     # already cover, and they confuse Hugin's blending, so leave them out.
     kept = []
@@ -436,10 +455,14 @@ def cmd_stitch(cfg, args):
     if not tiles:
         raise SystemExit("No tile_*.png files in that folder.")
     pto = os.path.join(folder, "coin.pto")
+    result = os.path.join(folder, "coin.tif")
+    if os.path.exists(result):
+        os.remove(result)  # so an old result can't be mistaken for this one if a step fails
 
     def run(cmd):
         print(">", os.path.basename(cmd[0]), " ".join(cmd[1:4]), "...")
-        if subprocess.run(cmd).returncode != 0:
+        # A list of arguments with no shell, so file names can't be run as commands.
+        if subprocess.run(cmd).returncode != 0:  # nosemgrep: dangerous-subprocess-use-audit
             print(f"{os.path.basename(cmd[0])} failed. You can open {pto} in the Hugin window and "
                   "finish there (Align, then Stitch).")
             return False
@@ -453,7 +476,7 @@ def cmd_stitch(cfg, args):
         [find_hugin_tool("cpclean"), "-o", pto, pto],
     ]
     if not all(run(cmd) for cmd in steps):
-        return
+        raise SystemExit(1)
 
     # Only yaw and pitch are optimised: the stage slides tiles, it never rotates them.
     # The centre tile stays fixed as the anchor, since it overlaps the most others.
@@ -475,7 +498,7 @@ def cmd_stitch(cfg, args):
         [find_hugin_tool("hugin_executor"), "--stitching", "--prefix=" + os.path.join(folder, "coin"), pto],
     ]
     if not all(run(cmd) for cmd in steps):
-        return
+        raise SystemExit(1)
     print(f"Stitched image: {os.path.join(folder, 'coin.tif')}")
     print(f"Next: python coin_scan.py cropfinal {os.path.join(folder, 'coin.tif')}")
 

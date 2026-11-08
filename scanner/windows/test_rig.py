@@ -112,7 +112,14 @@ class FirmwareTests(unittest.TestCase):
         np.testing.assert_allclose(from_below, from_above, atol=1e-3)
 
     def test_long_lines_are_cut_like_the_arduino(self):
-        self.assertEqual(self.ask("PING" + " " * 50), "OK coin_stage")
+        # The Arduino keeps only the first 40 characters, so the 2 at the end is lost.
+        line = "MOVE 1 ".ljust(40) + "2"
+        self.assertEqual(self.ask(line), "OK 1.000 0.000")
+
+    def test_half_steps_round_like_lround(self):
+        steps_per_mm = 4096 / rig_sim.read_firmware_settings()["LEAD_MM"]
+        # 2.5 steps: C's lround gives 3, Python's round would give 2.
+        self.assertEqual(self.ask(f"MOVE {2.5 / steps_per_mm:.10f} 0"), f"OK {3 / steps_per_mm:.3f} 0.000")
 
     def test_wrong_baud_rate_gives_gibberish(self):
         import serial
@@ -125,12 +132,21 @@ class FirmwareTests(unittest.TestCase):
             serial.Serial("COM99", 115200, timeout=1)
 
     def test_firmware_settings_come_from_the_ino(self):
-        fw = rig_sim.read_firmware_settings()
         ino = os.path.join(HERE, "..", "arduino", "coin_stage", "coin_stage.ino")
-        if os.path.exists(ino):
-            with open(ino) as f:
-                self.assertIn(f"LEAD_MM = {fw['LEAD_MM']}", f.read())
-        self.assertGreater(fw["LIMIT_MM"], 0)
+        with open(ino) as f:
+            text = f.read()
+        # Change every setting away from its default and check the simulator picks the new values up.
+        changed = (text.replace("LEAD_MM = 8.0;", "LEAD_MM = 2.0;")
+                       .replace("LIMIT_MM = 24.0;", "LIMIT_MM = 15.5;")
+                       .replace("BACKLASH_MM = 0.3;", "BACKLASH_MM = 0.45;")
+                       .replace("INVERT_Y = false;", "INVERT_Y = true;"))
+        self.assertNotEqual(text, changed, "coin_stage.ino's settings lines have changed; update this test")
+        with tempfile.TemporaryDirectory() as d:
+            path = os.path.join(d, "coin_stage.ino")
+            with open(path, "w") as f:
+                f.write(changed)
+            fw = rig_sim.read_firmware_settings(path)
+        self.assertEqual((fw["LEAD_MM"], fw["LIMIT_MM"], fw["BACKLASH_MM"], fw["INVERT_Y"]), (2.0, 15.5, 0.45, True))
 
 
 # ---------------------------------------------------------------- calibrate, scan, crop
